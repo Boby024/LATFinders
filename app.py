@@ -28,7 +28,7 @@ dfAraDB = pd.read_sql_query("SELECT * FROM testschema.courses c "
             "JOIN testschema.unis u ON c.uni_id = u.id "
             "JOIN testschema.ratings r ON r.course_id = c.id  ",con=engine)
 
-# rows where courseid is 1
+# rows where courseid is 2
 dfAraDB = dfAraDB.loc[dfAraDB["course_id"] == 1]
 dfAraDB["date"] = dfAraDB["date"].apply(lambda date: time.mktime(datetime.datetime.strptime(str(date), "%Y-%m-%d").timetuple()))
 dfAraDB = dfAraDB.sort_values(by="date")
@@ -56,7 +56,8 @@ app.layout = dash_table.DataTable(dfAraDB.to_dict('records'), [{"name": i, "id":
 models = {'Regression': linear_model.LinearRegression,
           'Decision Tree': tree.DecisionTreeRegressor,
           'k-NN': neighbors.KNeighborsRegressor,
-          'SVR': svm.SVR}
+          'SVR': svm.SVR,
+          "ARDRegression": linear_model.ARDRegression}
 app.layout = html.Div(children=[
     html.H1(children='Hello Dash'),
 
@@ -76,7 +77,7 @@ app.layout = html.Div(children=[
     html.P("Select model:"),
     dcc.Dropdown(
         id='dropdown',
-        options=["Regression", "Decision Tree", "k-NN", "SVR"],
+        options=["Regression", "Decision Tree", "k-NN", "SVR", "ARDRegression"],
         value='Decision Tree',
         clearable=False
     ),
