@@ -8920,7 +8920,22 @@
       "yearOfFoundation": 2013,
       "numberOfStudents": 100000,
       "numberOfDocents": null,
-      "numberOfProfessors": null
+      "numberOfProfessors": null,
+      "courseContentsRating": 4.305699481865285,
+      "docentsRating": 4.212435233160622,
+      "lecturesRating": 3.9738773747841107,
+      "furnishingsRating": 4.002482728842833,
+      "organizationRating": 3.5501943005181347,
+      "libraryRating": 3.5952910858615437,
+      "digitizationRating": 4.155945686462762,
+      "overallRating": 3.96595423143352,
+      "numberOf1StarReviews": 70,
+      "numberOf2StarReviews": 534,
+      "numberOf3StarReviews": 3312,
+      "numberOf4StarReviews": 4949,
+      "numberOf5StarReviews": 399,
+      "numberOfReviews": 9264,
+      "recommendationRate": 0.9505613126079447
     },
     {
       "id": 332,
