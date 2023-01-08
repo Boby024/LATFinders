@@ -1,0 +1,588 @@
+institutes/id,institutes/name,institutes/type,institutes/numberOfCourses,institutes/score,institutes/identityLink,institutes/yearOfFoundation,institutes/numberOfStudents,institutes/numberOfDocents,institutes/numberOfProfessors
+1,Academy of Visual Arts Frankfurt,Private Akademie,1,907,https://www.studycheck.de/hochschulen/ava,1957,150,30,
+2,accadis Hochschule Bad Homburg,Private Fachhochschule,19,959,https://www.studycheck.de/hochschulen/accadis-h,1980,491,50,15
+3,ADG Business School an der Steinbeis-Hochschule,Private Fachhochschule,8,980,https://www.studycheck.de/hochschulen/adg,2011,1200,,
+4,ADK Baden-Württemberg,Staatliche Fachhochschule,4,,https://www.studycheck.de/hochschulen/adk-bw,2007,63,,
+5,AdK Wien,Staatliche Akademie,8,,https://www.studycheck.de/hochschulen/akademie-wien,1692,1609,,
+6,Agrarhochschule Wien,Staatliche Fachhochschule,9,,https://www.studycheck.de/hochschulen/agrar-wien,2007,616,,
+7,Akademie der Bildenden Künste in Nürnberg,Staatliche Kunst- / Musikhochschule,5,,https://www.studycheck.de/hochschulen/adbk-nuernberg,1662,301,,15
+8,Akademie der Bildenden Künste München,Staatliche Kunst- / Musikhochschule,6,,https://www.studycheck.de/hochschulen/adbk-muenchen,1808,744,,37
+9,Akademie der Hochschule Biberach,Private Akademie,4,,https://www.studycheck.de/hochschulen/aka-biberach,1983,,,
+10,Akademie der Polizei Hamburg,Staatliche Fachhochschule,1,,https://www.studycheck.de/hochschulen/akapol-hamburg,2013,759,,20
+11,Akademie für Tonkunst,Private Akademie,3,,https://www.studycheck.de/hochschulen/aftd,1851,,,
+12,Akademie für Unternehmensmanagement,Private Akademie,14,,https://www.studycheck.de/hochschulen/afum,2008,480,22,
+13,Akademie Würth Business School,Private Akademie,1,,https://www.studycheck.de/hochschulen/wuerth,,,,
+14,Akkon Hochschule für Humanwissenschaften,Private Fachhochschule,13,,https://www.studycheck.de/hochschulen/akkon-h,2009,930,,10
+15,Alanus Hochschule für Kunst und Gesellschaft,Private Kunst- / Musikhochschule,25,975,https://www.studycheck.de/hochschulen/alanus-h,1973,1694,,69
+16,Alice Salomon Hochschule,Staatliche Fachhochschule,13,867,https://www.studycheck.de/hochschulen/ash-berlin,1971,4248,,74
+17,AMD Akademie Mode & Design,Private Fachhochschule,10,876,https://www.studycheck.de/hochschulen/amd,1989,2200,,17
+18,Anton Bruckner Privatuniversität,Private Universität,152,,https://www.studycheck.de/hochschulen/bruckner-uni,1823,680,,
+19,ASCENSO – Akademie für Business und Medien,Private Akademie,3,,https://www.studycheck.de/hochschulen/asc,,,36,7
+20,Augustana-Hochschule,Kirchliche Fachhochschule,1,,https://www.studycheck.de/hochschulen/augustana-hs,1947,133,,8
+21,Ausbildungsverbund Teltow e.V.,Private Akademie,1,,https://www.studycheck.de/hochschulen/avt,1991,,,
+22,BA Lüneburg,Staatliche Akademie,2,,https://www.studycheck.de/hochschulen/ba-lueneburg,1948,,,
+23,Bard College Berlin,Private Universität,2,,https://www.studycheck.de/hochschulen/ecla-bard,1999,243,17,3
+24,Barenboim-Said Akademie,Private Kunst- / Musikhochschule,2,,https://www.studycheck.de/hochschulen/bs-akademie,2015,71,,59
+25,BBA - Akademie der Immobilienwirtschaft,Private Akademie,2,,https://www.studycheck.de/hochschulen/bba,1993,,,
+26,bbw Hochschule,Private Fachhochschule,18,845,https://www.studycheck.de/hochschulen/bbw-h,2007,1195,200,32
+27,bbz Chemie,Private Akademie,1,,https://www.studycheck.de/hochschulen/bbz-chemie,1995,,,
+28,Berlin International,Private Fachhochschule,9,,https://www.studycheck.de/hochschulen/berlin-international,2014,420,,
+29,Berlin School of Creative Leadership,Private Fachhochschule,1,,https://www.studycheck.de/hochschulen/berlin-school,2006,,,
+30,Berlin School of Public Health,Staatliche Fachhochschule,3,,https://www.studycheck.de/hochschulen/bsoph,2007,96,,
+31,Berliner Hochschule für Technik,Staatliche Fachhochschule,65,1084,https://www.studycheck.de/hochschulen/bht-berlin,1971,13136,,295
+32,Bertha von Suttner Privatuniversität,Private Universität,7,,https://www.studycheck.de/hochschulen/bertha-uni,2017,65,,
+33,Berufliche Hochschule Hamburg,Staatliche Fachhochschule,5,,https://www.studycheck.de/hochschulen/bhh,2020,,,15
+34,Berufsakademie Bautzen,Staatliche Akademie,7,,https://www.studycheck.de/hochschulen/ba-bautzen,1991,600,,14
+35,Berufsakademie Dresden,Staatliche Akademie,9,867,https://www.studycheck.de/hochschulen/ba-dresden,1991,995,,26
+36,Berufsakademie Fulda,Private Akademie,4,,https://www.studycheck.de/hochschulen/ba-fulda,2007,17,,15
+37,Berufsakademie für Bankwirtschaft,Private Akademie,1,,https://www.studycheck.de/hochschulen/ba-bankwirtscha,1995,45,30,
+38,Berufsakademie Glauchau,Staatliche Akademie,11,876,https://www.studycheck.de/hochschulen/ba-glauchau,1991,850,,27
+39,Berufsakademie Hamburg,Private Akademie,2,,https://www.studycheck.de/hochschulen/ba-hamburg,2005,,,20
+40,Berufsakademie Leipzig,Staatliche Akademie,5,698,https://www.studycheck.de/hochschulen/ba-leipzig,1991,500,,15
+41,Berufsakademie Melle,Private Akademie,3,,https://www.studycheck.de/hochschulen/ba-melle,2000,,,40
+42,Berufsakademie Nord,Private Akademie,3,,https://www.studycheck.de/hochschulen/ba-nord,2017,,,
+43,Berufsakademie Plauen,Staatliche Akademie,5,919,https://www.studycheck.de/hochschulen/bap,1999,370,,12
+44,Berufsakademie Rhein-Main,Private Fachhochschule,4,,https://www.studycheck.de/hochschulen/ba-rm,2002,400,,
+45,Berufsakademie Riesa,Staatliche Akademie,7,846,https://www.studycheck.de/hochschulen/ba-riesa,1991,,,
+46,Berufsakademie Welfenakademie,Private Akademie,2,,https://www.studycheck.de/hochschulen/ba-welfenakadem,1993,,,
+47,Berufsakademie Wilhelmshaven,Private Akademie,1,,https://www.studycheck.de/hochschulen/ba-whv,2018,136,,
+48,Bildung & Beratung Bethel,Kirchliche Akademie,2,,https://www.studycheck.de/hochschulen/bb-bethel,2005,,,
+49,BIMM Institute,Private Akademie,6,,https://www.studycheck.de/hochschulen/bimm,1983,,,
+50,Bodensee Campus,Private Fachhochschule,8,,https://www.studycheck.de/hochschulen/bc,,207,,
+51,Brand University of Applied Sciences,Private Fachhochschule,6,884,https://www.studycheck.de/hochschulen/brand-uni,2010,307,,9
+52,Brüder-Grimm-Berufsakademie,Private Akademie,3,,https://www.studycheck.de/hochschulen/bg-ba-hanau,2012,,21,3
+53,BSP Business and Law School,Private Fachhochschule,21,938,https://www.studycheck.de/hochschulen/bsp,2009,554,,31
+54,BTU Cottbus-Senftenberg,Staatliche Universität,64,981,https://www.studycheck.de/hochschulen/btu,2013,6687,,185
+55,Bucerius Law School,Private Fachhochschule,2,,https://www.studycheck.de/hochschulen/bls-hamburg,2000,842,,21
+56,Bundesministerium für Landesverteidigung,Staatliche Fachhochschule,2,,https://www.studycheck.de/hochschulen/landesverteidigung,1956,293,,
+57,Burg Giebichenstein Kunsthochschule Halle,Staatliche Kunst- / Musikhochschule,30,920,https://www.studycheck.de/hochschulen/kh-halle,1915,1165,,50
+58,Campus M University,Private Fachhochschule,13,916,https://www.studycheck.de/hochschulen/cmu,2008,1000,,
+59,Campus M21,Private Akademie,7,,https://www.studycheck.de/hochschulen/cm21,2008,1000,,96
+60,Carl Remigius Medical School,Private Akademie,9,790,https://www.studycheck.de/hochschulen/cr-med-school,2016,,37,
+61,Carl von Ossietzky Universität Oldenburg,Staatliche Universität,129,1153,https://www.studycheck.de/hochschulen/uni-oldenburg,1973,15652,,257
+62,Catalyst,Private Akademie,9,,https://www.studycheck.de/hochschulen/catalyst,2013,,44,
+63,CBS International Business School,Private Fachhochschule,40,971,https://www.studycheck.de/hochschulen/cbs,1993,4000,160,61
+64,Central European University,Private Universität,28,,https://www.studycheck.de/hochschulen/european-uni,1991,926,,
+65,Charité,Staatliche Universität,9,989,https://www.studycheck.de/hochschulen/charite,1710,8489,,230
+66,Charlotte Fresenius Hochschule,Private Fachhochschule,2,,https://www.studycheck.de/hochschulen/cfh,2021,,,
+67,Charlotte Fresenius Privatuniversität,Private Universität,3,,https://www.studycheck.de/hochschulen/cfpu,2022,,,
+68,CODE University of Applied Sciences,Private Fachhochschule,3,,https://www.studycheck.de/hochschulen/code,2017,509,,
+69,Cusanus Hochschule für Gesellschaftsgestaltung,Private Fachhochschule,4,,https://www.studycheck.de/hochschulen/cusanus,2014,150,10,6
+70,CVJM-Hochschule Kassel,Private Fachhochschule,1,,https://www.studycheck.de/hochschulen/cvjm-kassel,2009,467,,11
+71,DAA Wirtschaftsakademie,Private Akademie,1,,https://www.studycheck.de/hochschulen/daa,1974,,19,
+72,Danube Private University,Private Universität,11,,https://www.studycheck.de/hochschulen/dpu,2009,779,,
+73,DAV Bremen,Private Akademie,2,,https://www.studycheck.de/hochschulen/dav-bremen,1960,,,
+74,dba - Deutsche Berufsakademie Sport und Gesundheit,Private Akademie,3,956,https://www.studycheck.de/hochschulen/dba,2017,300,20,5
+75,DBU Digital Business University of Applied Sciences,Private Fachhochschule,7,,https://www.studycheck.de/hochschulen/dbu,2018,160,32,
+76,Deutsche POP,Private Akademie,9,,https://www.studycheck.de/hochschulen/deutsche-pop,1995,3000,300,
+77,Deutsche Sporthochschule Köln,Staatliche Universität,20,1002,https://www.studycheck.de/hochschulen/dshs-koeln,1947,5946,,29
+78,Deutsche Universität für Verwaltungswissenschaften Speyer,Staatliche Universität,5,,https://www.studycheck.de/hochschulen/uni-speyer,1947,279,,18
+79,DHBW - Duale Hochschule Baden-Württemberg,Staatliche Fachhochschule,80,1309,https://www.studycheck.de/hochschulen/dhbw,1974,34193,,760
+80,DHSH - Duale Hochschule Schleswig-Holstein,Private Fachhochschule,3,,https://www.studycheck.de/hochschulen/dhsh,2018,472,,
+81,Die Angewandte,Staatliche Universität,25,,https://www.studycheck.de/hochschulen/angewandte-uni,1867,1563,,
+82,DIPLOMA Hochschule,Private Fachhochschule,11,877,https://www.studycheck.de/hochschulen/diploma,1994,7833,,
+83,DIU - Dresden International University,Private Fachhochschule,37,898,https://www.studycheck.de/hochschulen/diu-dresden,2003,1631,,
+84,Donau Uni Krems,Staatliche Universität,31,,https://www.studycheck.de/hochschulen/uni-donaukrems,1994,7800,,
+85,Dr. Hoch’s Konservatorium,Private Akademie,4,,https://www.studycheck.de/hochschulen/dr-hochs,1878,80,80,
+86,Duale Hochschule Gera-Eisenach,Staatliche Fachhochschule,10,927,https://www.studycheck.de/hochschulen/dhge,2016,1423,,51
+87,Düsseldorf Business School,Private Akademie,2,,https://www.studycheck.de/hochschulen/dbs,2002,,,
+88,EBS Universität für Wirtschaft und Recht,Private Universität,10,949,https://www.studycheck.de/hochschulen/ebs-wiesbaden,1971,1712,,44
+89,EBZ Business School,Private Fachhochschule,6,,https://www.studycheck.de/hochschulen/ebz-bochum,2008,1163,,16
+90,EC Europa Campus,Private Akademie,13,,https://www.studycheck.de/hochschulen/ec,2005,1000,,
+91,ecosign,Private Akademie,2,,https://www.studycheck.de/hochschulen/ecosign,1994,300,,
+92,ehb - Evangelische Hochschule Berlin,Kirchliche Fachhochschule,12,865,https://www.studycheck.de/hochschulen/ehb,1904,1670,,61
+93,ehs – Evangelische Hochschule Dresden,Kirchliche Fachhochschule,9,,https://www.studycheck.de/hochschulen/ehs-dresden,1991,858,,33
+94,Ernst-Abbe-Hochschule Jena,Staatliche Fachhochschule,42,1075,https://www.studycheck.de/hochschulen/fh-jena,1991,4400,,123
+95,ESCP Business School,Private Fachhochschule,8,,https://www.studycheck.de/hochschulen/escp-business-school,1819,973,,160
+96,ESMT Berlin – European School of Management and Technology,Private Fachhochschule,3,,https://www.studycheck.de/hochschulen/esmt-berlin,2002,482,,30
+97,EU Business School,Private Fachhochschule,18,,https://www.studycheck.de/hochschulen/eubs,1973,700,,
+98,"EU|FH – Hochschule für Gesundheit, Soziales & Pädagogik",Private Fachhochschule,21,824,https://www.studycheck.de/hochschulen/eufh,2001,1560,,33
+99,eufom Business School der FOM Hochschule,Private Fachhochschule,4,,https://www.studycheck.de/hochschulen/eufom,2012,500,,
+100,Euro Akademie,Private Akademie,3,,https://www.studycheck.de/hochschulen/euro-akademie,1980,,,
+101,Euro-FH,Private Fachhochschule,2,918,https://www.studycheck.de/hochschulen/eurofh,2003,6152,,10
+102,Europäische Studienakademie Kälte-Klima-Lüftung,Private Fachhochschule,2,,https://www.studycheck.de/hochschulen/euro-studienaka,2004,,,16
+103,European School of Design Frankfurt,Private Akademie,1,,https://www.studycheck.de/hochschulen/eu-school-of-design,2007,50,,
+104,Evangelische Hochschule Darmstadt,Kirchliche Fachhochschule,12,879,https://www.studycheck.de/hochschulen/eh-darmstadt,1971,1663,,29
+105,Evangelische Hochschule Freiburg,Kirchliche Fachhochschule,9,,https://www.studycheck.de/hochschulen/eh-freiburg,1918,942,,35
+106,Evangelische Hochschule für Kirchenmusik Halle,Kirchliche Kunst- / Musikhochschule,6,,https://www.studycheck.de/hochschulen/ehk-halle,1926,53,,
+107,Evangelische Hochschule für Soziale Arbeit & Diakonie,Kirchliche Fachhochschule,5,,https://www.studycheck.de/hochschulen/evh-hamburg,1971,609,,14
+108,Evangelische Hochschule Ludwigsburg,Kirchliche Fachhochschule,14,893,https://www.studycheck.de/hochschulen/eh-ludwigsburg,1999,1309,,64
+109,Evangelische Hochschule Rheinland-Westfalen-Lippe,Kirchliche Fachhochschule,9,959,https://www.studycheck.de/hochschulen/evh-bochum,1971,2603,,71
+110,Evangelische Hochschule Tabor,Private Fachhochschule,6,,https://www.studycheck.de/hochschulen/eh-tabor,1909,208,,15
+111,EVHN - Evangelische Hochschule Nürnberg,Kirchliche Fachhochschule,12,874,https://www.studycheck.de/hochschulen/eh-nuernberg,1927,1418,,43
+112,Fachhochschule Clara Hoffbauer Potsdam,Kirchliche Fachhochschule,4,,https://www.studycheck.de/hochschulen/fh-hoffbauer,2016,242,26,10
+113,Fachhochschule Erfurt,Staatliche Fachhochschule,32,1002,https://www.studycheck.de/hochschulen/fh-erfurt,1991,4052,,122
+114,Fachhochschule für die Wirtschaft Hannover (FHDW),Private Fachhochschule,10,1202,https://www.studycheck.de/hochschulen/fhdw-hannover,1996,560,,19
+115,Fachhochschule für Finanzen,Staatliche Fachhochschule,1,,https://www.studycheck.de/hochschulen/fhf-kw,1991,822,,
+116,Fachhochschule für Interkulturelle Theologie Hermannsburg,Private Fachhochschule,3,,https://www.studycheck.de/hochschulen/fh-hermannsburg,2012,66,,6
+117,Fachhochschule für Rechtspflege Nordrhein-Westfalen,Staatliche Fachhochschule,2,,https://www.studycheck.de/hochschulen/fhr-nrw,1976,754,49,9
+118,Fachhochschule Kiel,Staatliche Fachhochschule,30,1156,https://www.studycheck.de/hochschulen/fh-kiel,1969,7917,,140
+119,Fachhochschule Polizei Sachsen-Anhalt,Staatliche Fachhochschule,1,,https://www.studycheck.de/hochschulen/fhpolizei-sa,1997,764,,
+120,Fachhochschule Potsdam,Staatliche Fachhochschule,27,949,https://www.studycheck.de/hochschulen/fh-potsdam,1991,3594,223,129
+121,Fachhochschule Schwetzingen,Staatliche Fachhochschule,2,,https://www.studycheck.de/hochschulen/fh-schwetzingen,1953,777,,38
+122,Fachhochschule Südwestfalen,Staatliche Fachhochschule,65,1017,https://www.studycheck.de/hochschulen/fh-swf,2002,11837,121,178
+123,FAHMODA,Private Akademie,1,,https://www.studycheck.de/hochschulen/fahmoda,2003,,,
+124,FAU Erlangen-Nürnberg,Staatliche Universität,204,1334,https://www.studycheck.de/hochschulen/uni-erlangen,1743,38287,,548
+125,FH Aachen,Staatliche Fachhochschule,63,1215,https://www.studycheck.de/hochschulen/fh-aachen,1971,14955,,250
+126,FH Bielefeld,Staatliche Fachhochschule,63,1069,https://www.studycheck.de/hochschulen/fh-bielefeld,1971,10976,,222
+127,FH Burgenland,Private Fachhochschule,25,944,https://www.studycheck.de/hochschulen/fh-burgenland,1994,2472,,
+128,FH Campus 02,Private Fachhochschule,18,863,https://www.studycheck.de/hochschulen/campus02,1996,1441,,
+129,FH Campus Wien,Private Fachhochschule,54,949,https://www.studycheck.de/hochschulen/campuswien,2001,6756,,
+130,FH des bfi Wien,Private Fachhochschule,23,831,https://www.studycheck.de/hochschulen/bfi-wien,1996,2211,,
+131,FH Diakonie,Kirchliche Fachhochschule,8,,https://www.studycheck.de/hochschulen/fh-diakonie,2006,830,,17
+132,FH Dortmund,Staatliche Fachhochschule,51,1066,https://www.studycheck.de/hochschulen/fh-dortmund,1971,14621,,252
+133,FH Gesundheit Tirol,Private Fachhochschule,22,,https://www.studycheck.de/hochschulen/fhg-tirol,2007,1144,,
+134,FH Gesundheitsberufe OÖ,Private Fachhochschule,11,851,https://www.studycheck.de/hochschulen/fh-gesundheitsberufe,2010,1499,,
+135,FH Güstrow,Staatliche Fachhochschule,5,,https://www.studycheck.de/hochschulen/fhoevpr,1991,756,,
+136,FH JOANNEUM,Staatliche Fachhochschule,76,956,https://www.studycheck.de/hochschulen/fh-joanneum,1995,5021,369,
+137,FH Kärnten,Staatliche Fachhochschule,46,923,https://www.studycheck.de/hochschulen/fh-kaernten,1995,2649,,
+138,FH Krems,Staatliche Fachhochschule,25,963,https://www.studycheck.de/hochschulen/fh-krems,1994,3205,,
+139,FH Kufstein Tirol,Staatliche Fachhochschule,23,911,https://www.studycheck.de/hochschulen/fh-kufstein,1997,2200,500,
+140,FH Münster,Staatliche Fachhochschule,74,1182,https://www.studycheck.de/hochschulen/fh-muenster,1971,15129,,49
+141,FH Oberösterreich,Staatliche Fachhochschule,74,995,https://www.studycheck.de/hochschulen/fh-oberoesterreich,1993,5827,,
+142,FH Salzburg,Private Fachhochschule,34,882,https://www.studycheck.de/hochschulen/fh-salzburg,1995,3370,,
+143,FH St. Pölten,Staatliche Fachhochschule,37,945,https://www.studycheck.de/hochschulen/fh-poelten,1996,3700,,
+144,FH Technikum Wien,Private Fachhochschule,37,894,https://www.studycheck.de/hochschulen/fh-technikum,1994,4511,,
+145,FH Vorarlberg,Staatliche Fachhochschule,27,925,https://www.studycheck.de/hochschulen/fh-vorarlberg,1989,1594,,
+146,FH Wedel,Private Fachhochschule,21,929,https://www.studycheck.de/hochschulen/fh-wedel,1948,1290,62,28
+147,FH Wien,Private Fachhochschule,34,877,https://www.studycheck.de/hochschulen/fh-wien,1994,2875,1025,
+148,FH Wiener Neustadt,Staatliche Fachhochschule,49,899,https://www.studycheck.de/hochschulen/fh-wienerneustadt,1994,4373,,
+149,FHD - Fachhochschule Dresden,Private Fachhochschule,6,907,https://www.studycheck.de/hochschulen/fh-dresden,2010,530,78,16
+150,FHDW - Fachhochschule der Wirtschaft,Private Fachhochschule,15,989,https://www.studycheck.de/hochschulen/fhdw,1993,2072,150,50
+151,FHM - Fachhochschule des Mittelstands,Private Fachhochschule,43,1012,https://www.studycheck.de/hochschulen/fhm,2000,5775,,90
+152,FHSMP Potsdam,Private Fachhochschule,10,,https://www.studycheck.de/hochschulen/fhsmp,2009,331,7,11
+153,FHVD - Fachhochschule für Verwaltung und Dienstleistung,Staatliche Fachhochschule,4,882,https://www.studycheck.de/hochschulen/fhvd,1975,1667,89,
+154,FHW - Fachhochschule Westküste,Staatliche Fachhochschule,15,913,https://www.studycheck.de/hochschulen/fh-westkueste,1993,1849,,30
+155,Filmakademie Baden-Württemberg,Staatliche Fachhochschule,13,,https://www.studycheck.de/hochschulen/fabw,1991,539,,
+156,Filmuni Babelsberg,Staatliche Kunst- / Musikhochschule,22,,https://www.studycheck.de/hochschulen/fbkw,1954,903,,40
+157,Fliedner Fachhochschule,Private Fachhochschule,14,878,https://www.studycheck.de/hochschulen/fliedner-fh,2011,2172,,47
+158,Folkwang Uni,Staatliche Kunst- / Musikhochschule,39,906,https://www.studycheck.de/hochschulen/folkwang-uni,1927,1726,431,112
+159,FOM Hochschule,Private Fachhochschule,47,1368,https://www.studycheck.de/hochschulen/fom,1991,57000,2000,
+160,Frankfurt School of Finance & Management,Private Universität,14,939,https://www.studycheck.de/hochschulen/frankfurtschool,1957,2685,80,67
+161,Frankfurt UAS,Staatliche Fachhochschule,66,1057,https://www.studycheck.de/hochschulen/frankfurtuas,1971,15653,,258
+162,Freie Hochschule Stuttgart,Private Universität,6,,https://www.studycheck.de/hochschulen/fh-stuttgart,1928,296,9,13
+163,Friedrich Gulda School of Music Wien,Private Kunst- / Musikhochschule,32,,https://www.studycheck.de/hochschulen/amp-vienna,2011,209,,
+164,FTH - Freie Theologische Hochschule Gießen,Private Fachhochschule,2,971,https://www.studycheck.de/hochschulen/fth-giessen,1974,200,,12
+165,FU Berlin,Staatliche Universität,177,1327,https://www.studycheck.de/hochschulen/fu-berlin,1948,37102,,376
+166,Gisma Business School,Private Fachhochschule,17,,https://www.studycheck.de/hochschulen/gisma,1999,500,,
+167,Goethe Business School,Private Fachhochschule,3,,https://www.studycheck.de/hochschulen/gbs,2004,74,,
+168,Graduate Campus Hochschule Aalen,Private Akademie,17,,https://www.studycheck.de/hochschulen/gc,2019,,,
+169,Graduate School Ostwürttemberg,Private Akademie,4,,https://www.studycheck.de/hochschulen/gso,2010,,,21
+170,Graduate School Rhein-Neckar,Private Akademie,3,,https://www.studycheck.de/hochschulen/gsrn,2006,80,,
+171,Gustav Mahler Privatuniversität für Musik,Private Universität,4,,https://www.studycheck.de/hochschulen/gmpu,1828,188,,
+172,Hamburg Media School,Private Fachhochschule,5,,https://www.studycheck.de/hochschulen/hms,2003,2000,274,5
+173,Hasso-Plattner-Institut,Staatliche Akademie,6,,https://www.studycheck.de/hochschulen/hpi,1998,500,50,13
+174,HAW Hamburg – Hochschule für Angewandte Wissenschaften,Staatliche Fachhochschule,70,1132,https://www.studycheck.de/hochschulen/haw-hamburg,1970,16879,483,412
+175,HAWK - Hochschule für angewandte Wissenschaft und Kunst,Staatliche Fachhochschule,42,1033,https://www.studycheck.de/hochschulen/hawk,1971,6451,82,176
+176,HBC - Hochschule Biberach,Staatliche Fachhochschule,16,958,https://www.studycheck.de/hochschulen/hbc-biberach,1964,2456,340,85
+177,HBK - Hochschule der bildenden Künste Essen,Private Kunst- / Musikhochschule,7,,https://www.studycheck.de/hochschulen/hbk-essen,2013,263,30,18
+178,HBK - Hochschule der Bildenden Künste Saar,Staatliche Kunst- / Musikhochschule,17,,https://www.studycheck.de/hochschulen/hbk-saar,1989,462,,16
+179,HBK - Hochschule für Bildende Künste Braunschweig,Staatliche Kunst- / Musikhochschule,11,,https://www.studycheck.de/hochschulen/hbk-bs,1963,1011,,52
+180,HCU - HafenCity Universität Hamburg,Staatliche Universität,11,837,https://www.studycheck.de/hochschulen/hcu-hamburg,2006,2400,,40
+181,HdBA - Hochschule der Bundesagentur für Arbeit,Private Fachhochschule,3,885,https://www.studycheck.de/hochschulen/hdba,2006,1256,,58
+182,HdM - Hochschule der Medien Stuttgart,Staatliche Fachhochschule,25,1151,https://www.studycheck.de/hochschulen/hdm-stuttgart,1903,5500,,142
+183,HDWM - Hochschule der Wirtschaft für Management,Private Fachhochschule,9,867,https://www.studycheck.de/hochschulen/hdwm-mannheim,2011,434,15,23
+184,Hertie School,Private Fachhochschule,3,,https://www.studycheck.de/hochschulen/hertieschool,2003,656,,36
+185,Hessische Hochschule für Finanzen und Rechtspflege,Staatliche Fachhochschule,2,821,https://www.studycheck.de/hochschulen/hhfr,1980,1781,,8
+186,HfBK - Hochschule für Bildende Künste Dresden,Staatliche Kunst- / Musikhochschule,5,,https://www.studycheck.de/hochschulen/hfbk-dresden,1764,557,,29
+187,HFBK - Hochschule für Bildende Künste Hamburg,Staatliche Kunst- / Musikhochschule,4,,https://www.studycheck.de/hochschulen/hfbk-hamburg,1767,937,,45
+188,HFF - Hochschule für Fernsehen und Film München,Staatliche Kunst- / Musikhochschule,5,,https://www.studycheck.de/hochschulen/hff-muenchen,1966,349,,25
+189,HFG - Hochschule für Gestaltung Offenbach,Staatliche Kunst- / Musikhochschule,2,,https://www.studycheck.de/hochschulen/hfg-offenbach,1970,808,,28
+190,HfG - Hochschule für Gestaltung Schwäbisch Gmünd,Staatliche Fachhochschule,5,944,https://www.studycheck.de/hochschulen/hfg-gmuend,1909,697,,27
+191,HFJS Hochschule für Jüdische Studien Heidelberg,Private Fachhochschule,6,,https://www.studycheck.de/hochschulen/hfjs-heidelberg,1979,101,,11
+192,HfK - Hochschule für Kirchenmusik Heidelberg,Kirchliche Kunst- / Musikhochschule,10,,https://www.studycheck.de/hochschulen/hfk-heidelberg,1931,55,,17
+193,HFK - Hochschule für Künste Bremen,Staatliche Kunst- / Musikhochschule,25,,https://www.studycheck.de/hochschulen/hfk-bremen,1873,986,,73
+194,HfKM - Hochschule für katholische Kirchenmusik und Musikpädagogik,Kirchliche Kunst- / Musikhochschule,40,,https://www.studycheck.de/hochschulen/hfkm-regensburg,2001,124,60,24
+195,HFM - Hochschule für Musik Detmold,Staatliche Kunst- / Musikhochschule,34,,https://www.studycheck.de/hochschulen/hfm-detmold,1946,689,,57
+196,HFM - Hochschule für Musik Karlsruhe,Staatliche Kunst- / Musikhochschule,83,,https://www.studycheck.de/hochschulen/hfm-karlsruhe,1812,560,,57
+197,HFM - Hochschule für Musik Nürnberg,Staatliche Kunst- / Musikhochschule,66,,https://www.studycheck.de/hochschulen/hfm-nuernberg,2008,444,150,30
+198,HFM - Hochschule für Musik Saar,Staatliche Kunst- / Musikhochschule,34,,https://www.studycheck.de/hochschulen/hfm-saar,1947,466,,40
+199,HFM - Hochschule für Musik Würzburg,Staatliche Kunst- / Musikhochschule,17,,https://www.studycheck.de/hochschulen/hfm-wuerzburg,1797,415,,81
+200,HfM Weimar,Staatliche Kunst- / Musikhochschule,44,,https://www.studycheck.de/hochschulen/hfm-weimar,1872,783,,72
+201,HfMDK - Hochschule für Musik und Darstellende Kunst Frankfurt am Main,Staatliche Kunst- / Musikhochschule,23,,https://www.studycheck.de/hochschulen/hfmdk-ffm,1878,893,,67
+202,HFR - Hochschule für Forstwirtschaft Rottenburg,Staatliche Fachhochschule,8,929,https://www.studycheck.de/hochschulen/hs-rottenburg,1954,951,,52
+203,HfS - Hochschule für Schauspielkunst Berlin,Staatliche Kunst- / Musikhochschule,7,,https://www.studycheck.de/hochschulen/hfs-berlin,1905,272,,30
+204,HFT - Hochschule für Technik Stuttgart,Staatliche Fachhochschule,33,1069,https://www.studycheck.de/hochschulen/hft-stuttgart,1832,4051,419,121
+205,HFU - Hochschule Furtwangen,Staatliche Fachhochschule,60,1277,https://www.studycheck.de/hochschulen/hs-furtwangen,1850,6036,,176
+206,HfWU Hochschule für Wirtschaft und Umwelt Nürtingen-Geislingen,Staatliche Fachhochschule,50,1031,https://www.studycheck.de/hochschulen/hfwu,1949,5539,420,134
+207,HHL Leipzig Graduate School of Management,Private Fachhochschule,4,,https://www.studycheck.de/hochschulen/hhl-leipzig,1898,659,,20
+208,HHN - Hochschule Heilbronn,Staatliche Fachhochschule,55,1080,https://www.studycheck.de/hochschulen/hs-heilbronn,1961,8650,,200
+209,HKS - Hochschule für Künste im Sozialen Ottersberg,Private Kunst- / Musikhochschule,5,,https://www.studycheck.de/hochschulen/hks-ottersberg,1967,326,58,17
+210,HM - Hochschule München,Staatliche Fachhochschule,84,1274,https://www.studycheck.de/hochschulen/hs-muenchen,1971,18544,,500
+211,HMDK - Hochschule für Musik und Darstellende Kunst Stuttgart,Staatliche Kunst- / Musikhochschule,38,,https://www.studycheck.de/hochschulen/hmdk-stuttgart,1857,875,315,37
+212,HMKW,Private Fachhochschule,11,832,https://www.studycheck.de/hochschulen/hmkw,2008,916,140,57
+213,HMT - Hochschule für Musik und Theater Rostock,Staatliche Kunst- / Musikhochschule,27,,https://www.studycheck.de/hochschulen/hmt-rostock,1994,530,,25
+214,"HMTMH - Hochschule für Musik, Theater und Medien Hannover",Staatliche Kunst- / Musikhochschule,29,912,https://www.studycheck.de/hochschulen/hmtm-hannover,1943,1496,221,97
+215,HMU - Health and Medical University,Private Universität,6,,https://www.studycheck.de/hochschulen/hmu,2020,212,,21
+216,HNE Eberswalde,Staatliche Fachhochschule,19,895,https://www.studycheck.de/hochschulen/hne-eberswalde,1992,2299,,66
+217,HNU - Hochschule Neu-Ulm,Staatliche Fachhochschule,30,1047,https://www.studycheck.de/hochschulen/hs-neu-ulm,1991,4078,,70
+218,Hochschule 21,Private Fachhochschule,7,888,https://www.studycheck.de/hochschulen/hochschule-21,2005,1017,,16
+219,Hochschule Aalen,Staatliche Fachhochschule,68,1194,https://www.studycheck.de/hochschulen/htw-aalen,1962,6014,,151
+220,Hochschule Albstadt-Sigmaringen,Staatliche Fachhochschule,27,1091,https://www.studycheck.de/hochschulen/hs-albsig,1971,3445,,81
+221,Hochschule Anhalt,Staatliche Fachhochschule,63,972,https://www.studycheck.de/hochschulen/hs-anhalt,1992,6679,,160
+222,Hochschule Ansbach,Staatliche Fachhochschule,35,993,https://www.studycheck.de/hochschulen/hs-ansbach,1996,3542,,59
+223,Hochschule Augsburg,Staatliche Fachhochschule,60,1002,https://www.studycheck.de/hochschulen/hs-augsburg,1971,6700,,160
+224,Hochschule Bochum,Staatliche Fachhochschule,39,960,https://www.studycheck.de/hochschulen/hs-bochum,1971,8483,,150
+225,Hochschule Bonn-Rhein-Sieg,Staatliche Fachhochschule,33,1011,https://www.studycheck.de/hochschulen/hs-brs,1995,9415,,151
+226,Hochschule Bremen,Staatliche Fachhochschule,64,1019,https://www.studycheck.de/hochschulen/hs-bremen,1982,8730,,209
+227,Hochschule Bremerhaven,Staatliche Fachhochschule,23,916,https://www.studycheck.de/hochschulen/hs-bremerhaven,1975,2840,,90
+228,Hochschule Coburg,Staatliche Fachhochschule,45,1074,https://www.studycheck.de/hochschulen/hs-coburg,1814,4759,38,125
+229,Hochschule Darmstadt,Staatliche Fachhochschule,65,1231,https://www.studycheck.de/hochschulen/hs-darmstadt,1876,16748,,321
+230,Hochschule der Bayerischen Wirtschaft,Private Fachhochschule,8,,https://www.studycheck.de/hochschulen/hdbw,2012,535,29,15
+231,Hochschule der Deutschen Bundesbank,Private Fachhochschule,1,,https://www.studycheck.de/hochschulen/fh-bundesbank,1980,430,,18
+232,Hochschule der Deutschen Gesetzlichen Unfallversicherung (HGU),Private Fachhochschule,2,,https://www.studycheck.de/hochschulen/hsdgu,1994,420,,
+233,Hochschule der Polizei des Landes Brandenburg,Staatliche Fachhochschule,1,,https://www.studycheck.de/hochschulen/hpolbb,1998,759,,
+234,Hochschule der Polizei Rheinland-Pfalz,Staatliche Fachhochschule,2,,https://www.studycheck.de/hochschulen/hs-polizei-rlp,2015,1596,,
+235,Hochschule der Sächsischen Polizei,Staatliche Fachhochschule,1,,https://www.studycheck.de/hochschulen/hdsp,,602,,
+236,Hochschule des Bundes,Staatliche Fachhochschule,15,883,https://www.studycheck.de/hochschulen/hs-bund,1979,8000,260,60
+237,Hochschule Düsseldorf,Staatliche Fachhochschule,42,1154,https://www.studycheck.de/hochschulen/hsduesseldorf,1971,11371,,200
+238,Hochschule Emden/Leer,Staatliche Fachhochschule,34,945,https://www.studycheck.de/hochschulen/hs-emden-leer,2009,4535,,107
+239,Hochschule Esslingen,Staatliche Fachhochschule,42,1032,https://www.studycheck.de/hochschulen/hs-esslingen,1868,6382,,230
+240,Hochschule Flensburg,Staatliche Fachhochschule,19,892,https://www.studycheck.de/hochschulen/hs-flensburg,1886,3598,,80
+241,Hochschule Fresenius,Private Fachhochschule,76,1303,https://www.studycheck.de/hochschulen/hs-fresenius,1848,18000,,
+242,Hochschule Fulda,Staatliche Fachhochschule,44,1046,https://www.studycheck.de/hochschulen/hs-fulda,1974,9735,,150
+243,Hochschule für den öffentlichen Dienst in Bayern,Staatliche Fachhochschule,7,734,https://www.studycheck.de/hochschulen/fhvr-bayern,1974,5601,,
+244,Hochschule für Evangelische Kirchenmusik,Kirchliche Kunst- / Musikhochschule,8,,https://www.studycheck.de/hochschulen/hfk-bayreuth,2000,31,,12
+245,Hochschule für Finanzen NRW,Staatliche Fachhochschule,2,851,https://www.studycheck.de/hochschulen/fhf-nordkirchen,1976,2824,125,90
+246,Hochschule für Finanzen Rheinland-Pfalz,Staatliche Fachhochschule,1,,https://www.studycheck.de/hochschulen/hs-rlp,,719,,
+247,Hochschule für Finanzwirtschaft & Management,Private Fachhochschule,5,923,https://www.studycheck.de/hochschulen/hds,2003,840,70,11
+248,Hochschule für Gesundheit,Staatliche Fachhochschule,15,922,https://www.studycheck.de/hochschulen/hs-gesundheit,2009,1800,,24
+249,Hochschule für Grafik und Buchkunst Leipzig,Staatliche Kunst- / Musikhochschule,5,,https://www.studycheck.de/hochschulen/hgb-leipzig,1763,506,,36
+250,Hochschule für Kirchenmusik Dresden,Kirchliche Kunst- / Musikhochschule,2,,https://www.studycheck.de/hochschulen/hfk-dresden,1949,28,51,8
+251,Hochschule für Kirchenmusik Herford-Witten,Kirchliche Kunst- / Musikhochschule,5,,https://www.studycheck.de/hochschulen/hfk-herford,1948,56,55,
+252,Hochschule für Kirchenmusik Rottenburg,Kirchliche Kunst- / Musikhochschule,7,,https://www.studycheck.de/hochschulen/hfk-rottenburg,1949,40,,
+253,Hochschule für Kirchenmusik Tübingen,Kirchliche Kunst- / Musikhochschule,4,,https://www.studycheck.de/hochschulen/hfk-tuebingen,1945,28,,
+254,Hochschule für Kommunikation und Gestaltung HfK+G,Private Fachhochschule,3,,https://www.studycheck.de/hochschulen/hfk-g,2013,198,14,7
+255,Hochschule für Musik Berlin,Staatliche Kunst- / Musikhochschule,71,,https://www.studycheck.de/hochschulen/hfm-berlin,1950,582,,67
+256,Hochschule für Musik Dresden,Staatliche Kunst- / Musikhochschule,50,,https://www.studycheck.de/hochschulen/hfm-dresden,1856,729,,61
+257,Hochschule für Musik Freiburg,Staatliche Kunst- / Musikhochschule,10,,https://www.studycheck.de/hochschulen/mh-freiburg,1946,594,,66
+258,Hochschule für Musik und Darstellende Kunst Mannheim,Staatliche Kunst- / Musikhochschule,10,,https://www.studycheck.de/hochschulen/hfmdk-mannheim,1971,611,,
+259,Hochschule für Musik und Tanz Köln,Staatliche Kunst- / Musikhochschule,54,924,https://www.studycheck.de/hochschulen/hfmt-koeln,1845,1522,,121
+260,Hochschule für Musik und Theater Hamburg,Staatliche Kunst- / Musikhochschule,86,,https://www.studycheck.de/hochschulen/hfmt-hamburg,1950,1379,,140
+261,Hochschule für Musik und Theater Leipzig,Staatliche Kunst- / Musikhochschule,52,,https://www.studycheck.de/hochschulen/hmt-leipzig,1843,1091,,71
+262,Hochschule für Musik und Theater München,Staatliche Kunst- / Musikhochschule,78,,https://www.studycheck.de/hochschulen/hmt-muenchen,1846,1267,400,125
+263,Hochschule für Öffentliche Verwaltung Bremen,Staatliche Fachhochschule,3,,https://www.studycheck.de/hochschulen/hfoev,1979,607,,15
+264,Hochschule für öffentliche Verwaltung Kehl,Staatliche Fachhochschule,6,852,https://www.studycheck.de/hochschulen/hochschule-kehl,1971,1366,,44
+265,Hochschule für öffentliche Verwaltung Rheinland-Pfalz,Staatliche Fachhochschule,5,759,https://www.studycheck.de/hochschulen/hoev-rlp,1981,897,105,
+266,Hochschule für öffentliche Verwaltung und Finanzen Ludwigsburg,Staatliche Fachhochschule,6,799,https://www.studycheck.de/hochschulen/hs-ludwigsburg,1999,2912,,80
+267,Hochschule für Philosophie,Kirchliche Fachhochschule,3,,https://www.studycheck.de/hochschulen/hfp-muenchen,1925,436,8,11
+268,Hochschule für Politik München,Staatliche Fachhochschule,2,,https://www.studycheck.de/hochschulen/hfpm,1950,570,,12
+269,Hochschule für Polizei Baden-Württemberg,Staatliche Fachhochschule,1,,https://www.studycheck.de/hochschulen/hfpol-bw,,1925,58,
+270,Hochschule für Polizei und öffentliche Verwaltung NRW,Staatliche Fachhochschule,7,943,https://www.studycheck.de/hochschulen/hspv,1976,12115,1290,
+271,Hochschule für Wirtschaft und Gesellschaft Ludwigshafen,Staatliche Fachhochschule,33,923,https://www.studycheck.de/hochschulen/hwg-lu,1965,4831,,89
+272,Hochschule Geisenheim,Staatliche Fachhochschule,15,896,https://www.studycheck.de/hochschulen/hgu,2013,1832,,45
+273,Hochschule Hamm-Lippstadt,Staatliche Fachhochschule,29,1007,https://www.studycheck.de/hochschulen/hs-hl,2009,5971,,117
+274,Hochschule Hannover,Staatliche Fachhochschule,59,1067,https://www.studycheck.de/hochschulen/hs-hannover,1971,9897,,260
+275,Hochschule Harz,Staatliche Fachhochschule,28,962,https://www.studycheck.de/hochschulen/hs-harz,1991,3268,,74
+276,Hochschule Hof,Staatliche Fachhochschule,37,1105,https://www.studycheck.de/hochschulen/hof,1994,3800,,106
+277,Hochschule Kaiserslautern,Staatliche Fachhochschule,54,1093,https://www.studycheck.de/hochschulen/hs-kl,1996,6261,,148
+278,Hochschule Karlsruhe,Staatliche Fachhochschule,45,1034,https://www.studycheck.de/hochschulen/hs-karlsruhe,1878,7563,,159
+279,Hochschule Kempten,Staatliche Fachhochschule,43,986,https://www.studycheck.de/hochschulen/hs-kempten,1977,5728,340,140
+280,Hochschule Koblenz,Staatliche Fachhochschule,48,1064,https://www.studycheck.de/hochschulen/hs-koblenz,1996,9847,,157
+281,Hochschule Landshut,Staatliche Fachhochschule,48,1141,https://www.studycheck.de/hochschulen/hs-landshut,1978,4490,,120
+282,Hochschule Macromedia,Private Fachhochschule,16,1031,https://www.studycheck.de/hochschulen/hs-macromedia,2006,4534,,115
+283,Hochschule Magdeburg-Stendal,Staatliche Fachhochschule,40,1083,https://www.studycheck.de/hochschulen/hs-magdeburg,1991,5452,,130
+284,Hochschule Mainz,Staatliche Fachhochschule,38,982,https://www.studycheck.de/hochschulen/hs-mainz,1996,5867,254,145
+285,Hochschule Mannheim,Staatliche Fachhochschule,37,977,https://www.studycheck.de/hochschulen/hs-mannheim,1898,5468,,182
+286,Hochschule Meißen (FH) und Fortbildungszentrum,Staatliche Fachhochschule,8,791,https://www.studycheck.de/hochschulen/fh-meissen,1992,1011,65,11
+287,Hochschule Mittweida,Staatliche Fachhochschule,33,1001,https://www.studycheck.de/hochschulen/hs-mittweida,1865,6908,,107
+288,Hochschule Neubrandenburg,Staatliche Fachhochschule,30,935,https://www.studycheck.de/hochschulen/hs-nb,1991,2189,,70
+289,Hochschule Niederrhein,Staatliche Fachhochschule,57,1092,https://www.studycheck.de/hochschulen/hs-niederrhein,1971,14260,,255
+290,Hochschule Nordhausen,Staatliche Fachhochschule,29,957,https://www.studycheck.de/hochschulen/fh-nordhausen,1997,2418,,48
+291,Hochschule Offenburg,Staatliche Fachhochschule,42,969,https://www.studycheck.de/hochschulen/hs-offenburg,1964,4346,166,130
+292,Hochschule Osnabrück,Staatliche Fachhochschule,98,1275,https://www.studycheck.de/hochschulen/hs-osnabrueck,1971,14300,,313
+293,Hochschule Pforzheim,Staatliche Fachhochschule,47,1086,https://www.studycheck.de/hochschulen/hs-pforzheim,1877,5913,250,196
+294,Hochschule Reutlingen,Staatliche Fachhochschule,46,1097,https://www.studycheck.de/hochschulen/hs-reutlingen,1855,5227,,153
+295,Hochschule Rhein-Waal,Staatliche Fachhochschule,35,958,https://www.studycheck.de/hochschulen/hs-rhein-waal,2009,6997,120,109
+296,Hochschule RheinMain,Staatliche Fachhochschule,66,1110,https://www.studycheck.de/hochschulen/hs-rheinmain,1971,13849,,251
+297,Hochschule Ruhr West,Staatliche Fachhochschule,32,1007,https://www.studycheck.de/hochschulen/hs-ruhr-west,2009,6500,,98
+298,Hochschule Schmalkalden,Staatliche Fachhochschule,23,926,https://www.studycheck.de/hochschulen/hs-schmalkalden,1902,2528,,67
+299,Hochschule Stralsund,Staatliche Fachhochschule,28,968,https://www.studycheck.de/hochschulen/hs-stralsund,1991,2422,,89
+300,Hochschule Trier,Staatliche Fachhochschule,79,1000,https://www.studycheck.de/hochschulen/hs-trier,1971,6992,,160
+301,Hochschule Weihenstephan-Triesdorf,Staatliche Fachhochschule,29,1051,https://www.studycheck.de/hochschulen/hswt,1971,6122,318,143
+302,Hochschule Wismar,Staatliche Fachhochschule,38,971,https://www.studycheck.de/hochschulen/hs-wismar,1908,8279,,141
+303,Hochschule Worms,Staatliche Fachhochschule,21,934,https://www.studycheck.de/hochschulen/hs-worms,1978,3661,,62
+304,Hochschule Zittau/Görlitz,Staatliche Fachhochschule,42,980,https://www.studycheck.de/hochschulen/hs-zittau,1992,2788,,110
+305,HoMe - Hochschule Merseburg,Staatliche Fachhochschule,25,904,https://www.studycheck.de/hochschulen/hs-merseburg,1992,3091,,109
+306,HöMS - Hessische Hochschule für öffentliches Management und Sicherheit,Staatliche Fachhochschule,7,814,https://www.studycheck.de/hochschulen/hoems-hessen,1980,3979,120,
+307,HSAP Hochschule für angewandte Pädagogik,Private Fachhochschule,2,,https://www.studycheck.de/hochschulen/hsap,2013,320,,12
+308,HSBA - Hamburg School of Business Administration,Private Fachhochschule,7,875,https://www.studycheck.de/hochschulen/hsba-hamburg,2004,1061,,25
+309,HSD Hochschule Döpfer,Private Fachhochschule,13,1003,https://www.studycheck.de/hochschulen/hsd,2013,592,,15
+310,HSW - Hochschule Weserbergland,Private Fachhochschule,4,953,https://www.studycheck.de/hochschulen/hsw-hameln,2010,478,,16
+311,HTW - Hochschule für Technik und Wirtschaft Berlin,Staatliche Fachhochschule,71,1231,https://www.studycheck.de/hochschulen/htw-berlin,1994,14355,800,295
+312,HTW – Hochschule für Technik und Wirtschaft Dresden,Staatliche Fachhochschule,38,1003,https://www.studycheck.de/hochschulen/htw-dresden,1992,4791,,180
+313,htw saar - Hochschule für Technik und Wirtschaft des Saarlandes,Staatliche Fachhochschule,58,1180,https://www.studycheck.de/hochschulen/htw-saarland,1971,6039,,134
+314,HTWG - Hochschule Konstanz,Staatliche Fachhochschule,38,1062,https://www.studycheck.de/hochschulen/htwg-konstanz,1906,4882,250,165
+315,"HTWK - Hochschule für Technik, Wirtschaft und Kultur",Staatliche Fachhochschule,43,967,https://www.studycheck.de/hochschulen/htwk-leipzig,1992,6343,,168
+316,HU Berlin,Staatliche Universität,164,1282,https://www.studycheck.de/hochschulen/hu-berlin,1810,35899,,440
+317,HWR Berlin,Staatliche Fachhochschule,47,1098,https://www.studycheck.de/hochschulen/hwr-berlin,1971,11581,802,234
+318,IB Hochschule,Private Fachhochschule,8,,https://www.studycheck.de/hochschulen/ib-berlin,2007,828,,16
+319,iba | Internationale Berufsakademie,Private Akademie,19,1179,https://www.studycheck.de/hochschulen/iba,2006,3500,,
+320,IBS IT & Business School Oldenburg,Private Fachhochschule,2,,https://www.studycheck.de/hochschulen/ba-oldenburg,2003,189,,
+321,"ICN Business School, Campus Berlin",Private Akademie,5,,https://www.studycheck.de/hochschulen/icn,1905,3000,,
+322,IHL - Internationale Hochschule Liebenzell,Private Fachhochschule,5,1000,https://www.studycheck.de/hochschulen/ihl,2011,283,,16
+323,IMC - International Management College,Private Akademie,4,,https://www.studycheck.de/hochschulen/imc,,,,
+324,Institut der Wirtschaft Hellweg-Sauerland gGmbH,Private Akademie,1,,https://www.studycheck.de/hochschulen/vwa-hs,1994,1000,,
+325,Institut für Fachlehrer,Staatliche Universität,2,,https://www.studycheck.de/hochschulen/ifl,1966,200,32,
+326,Internationale Filmschule Köln,Staatliche Fachhochschule,4,,https://www.studycheck.de/hochschulen/ifs,2000,87,74,19
+327,Internationale Hochschule SDI München,Private Fachhochschule,11,897,https://www.studycheck.de/hochschulen/sdi-muenchen,2007,370,50,20
+328,IPU Berlin,Private Universität,7,,https://www.studycheck.de/hochschulen/ipu-berlin,2009,777,,22
+329,isba – Internationale Studien- und Berufsakademie,Private Akademie,2,,https://www.studycheck.de/hochschulen/isba,2015,300,,
+330,ISM - International School of Management,Private Fachhochschule,36,877,https://www.studycheck.de/hochschulen/ism-dortmund,1990,3230,,75
+331,IU Duales Studium,Private Fachhochschule,29,1373,https://www.studycheck.de/hochschulen/iu-dual,2013,100000,,
+332,IU Health University,Private Fachhochschule,1,,https://www.studycheck.de/hochschulen/iu-health,,,,
+333,IU myStudium,Private Fachhochschule,16,1079,https://www.studycheck.de/hochschulen/iu-mystudium,2021,100000,,
+334,Jacobs University,Private Universität,19,890,https://www.studycheck.de/hochschulen/jacobs-uni,2001,1361,,62
+335,Jade Hochschule,Staatliche Fachhochschule,44,997,https://www.studycheck.de/hochschulen/jade-hs,2009,7043,,200
+336,JAM MUSIC LAB,Private Universität,4,,https://www.studycheck.de/hochschulen/jammusiclab,2011,157,,
+337,JLU - Uni Gießen,Staatliche Universität,119,1332,https://www.studycheck.de/hochschulen/uni-giessen,1607,28281,,400
+338,Karl Landsteiner Privatuniversität,Private Universität,4,,https://www.studycheck.de/hochschulen/karl-landsteiner,2013,558,,
+339,Karlshochschule,Private Fachhochschule,22,980,https://www.studycheck.de/hochschulen/khs,2009,474,,15
+340,Katholische Hochschule Freiburg,Kirchliche Fachhochschule,10,936,https://www.studycheck.de/hochschulen/kh-freiburg,1971,1774,160,43
+341,Katholische Hochschule Mainz,Kirchliche Fachhochschule,9,816,https://www.studycheck.de/hochschulen/kh-mainz,1972,1600,,36
+342,Katholische Hochschule Nordrhein-Westfalen,Kirchliche Fachhochschule,20,939,https://www.studycheck.de/hochschulen/katho-nrw,1971,5338,249,126
+343,Katholische Stiftungshochschule München,Kirchliche Fachhochschule,14,908,https://www.studycheck.de/hochschulen/ksh-muenchen,1971,2519,300,70
+344,KHSB Berlin,Kirchliche Fachhochschule,10,859,https://www.studycheck.de/hochschulen/khsb-berlin,1991,1265,87,45
+345,Kirchliche Hochschule Wuppertal,Kirchliche Fachhochschule,2,,https://www.studycheck.de/hochschulen/kiho-wuppertal,1935,200,10,8
+346,KISD - Köln International School of Design,Staatliche Fachhochschule,2,,https://www.studycheck.de/hochschulen/kisd,1991,400,,14
+347,KIT,Staatliche Universität,101,1234,https://www.studycheck.de/hochschulen/kit-karlsruhe,2009,22802,,378
+348,KLU - Kühne Logistics University,Private Universität,4,999,https://www.studycheck.de/hochschulen/the-klu,2010,384,,27
+349,Kölner Hochschule für Katholische Theologie,Private Fachhochschule,2,,https://www.studycheck.de/hochschulen/khkt,1925,65,16,9
+350,Kolping Hochschule,Private Fachhochschule,4,,https://www.studycheck.de/hochschulen/kolping-hs,2019,75,,
+351,Kommunale Hochschule für Verwaltung in Niedersachsen (HSVN),Private Fachhochschule,2,784,https://www.studycheck.de/hochschulen/hsvn,2007,1501,,40
+352,KPH - Edith Stein,Private Fachhochschule,5,,https://www.studycheck.de/hochschulen/kph-edithstein,2007,369,,
+353,KPH Wien / Krems,Private Fachhochschule,11,828,https://www.studycheck.de/hochschulen/kph-wien,2007,2430,,
+354,KU Eichstätt-Ingolstadt,Kirchliche Universität,93,1210,https://www.studycheck.de/hochschulen/ku-eichstaett,1980,5033,890,122
+355,KU Linz,Private Universität,8,,https://www.studycheck.de/hochschulen/kath-u-linz,1978,250,,
+356,Kunstakademie Düsseldorf,Staatliche Kunst- / Musikhochschule,4,,https://www.studycheck.de/hochschulen/ka-duesseldorf,1773,567,,35
+357,Kunstakademie Münster,Staatliche Kunst- / Musikhochschule,3,,https://www.studycheck.de/hochschulen/kuak-muenster,1971,351,,17
+358,Kunsthochschule für Medien Köln,Staatliche Kunst- / Musikhochschule,2,,https://www.studycheck.de/hochschulen/khm-koeln,1990,380,,42
+359,Kunstuniversität  Graz,Staatliche Universität,80,,https://www.studycheck.de/hochschulen/ku-graz,1963,1980,,
+360,Kunstuniversität Linz,Staatliche Universität,30,,https://www.studycheck.de/hochschulen/ku-linz,1973,1405,,
+361,Kunstuniversität Wien,Staatliche Universität,10,,https://www.studycheck.de/hochschulen/ku-wien,1692,1509,,
+362,Lancaster University Leipzig,Private Universität,7,,https://www.studycheck.de/hochschulen/lancaster-uni,2019,12000,,
+363,Lauder Business School,Staatliche Fachhochschule,3,,https://www.studycheck.de/hochschulen/lbs,2003,369,,
+364,Leibniz-Fachhochschule,Private Fachhochschule,8,717,https://www.studycheck.de/hochschulen/leibniz-fh,1920,593,,14
+365,LMU - Uni München,Staatliche Universität,237,1336,https://www.studycheck.de/hochschulen/lmu-muenchen,1472,51512,,800
+366,Lutherische Theologische Hochschule Oberursel,Kirchliche Fachhochschule,2,,https://www.studycheck.de/hochschulen/lthh-oberursel,1947,18,,5
+367,Macromedia Akademie,Private Akademie,1,,https://www.studycheck.de/hochschulen/macromedia,2006,2002,,
+368,Macromedia Plus,Private Fachhochschule,29,,https://www.studycheck.de/hochschulen/m-plus,2021,,,
+369,"mAHS, media Akademie - Hochschule Stuttgart",Private Fachhochschule,5,,https://www.studycheck.de/hochschulen/mahs,2015,108,,
+370,Management Academy Heidelberg,Private Fachhochschule,2,,https://www.studycheck.de/hochschulen/mah,2007,,,
+371,Mannheim Business School,Private Universität,5,,https://www.studycheck.de/hochschulen/mabus,2005,520,,65
+372,MCI | Die Unternehmerische Hochschule®,Fachhochschule,25,902,https://www.studycheck.de/hochschulen/mci-innsbruck,1995,3634,,
+373,mdw – Universität für Musik und darstellende Kunst Wien,Staatliche Universität,61,,https://www.studycheck.de/hochschulen/mdw-wien,1817,3000,,
+374,MEDIADESIGN Hochschule MD.H,Private Fachhochschule,7,823,https://www.studycheck.de/hochschulen/mdh-berlin,2004,808,,58
+375,Medizinische Universität Graz,Staatliche Universität,34,906,https://www.studycheck.de/hochschulen/med-uni-graz,2004,4350,1950,
+376,Medizinische Universität Innsbruck,Staatliche Universität,4,930,https://www.studycheck.de/hochschulen/med-uni-innsbruck,2004,3341,,
+377,Medizinische Universität Wien,Staatliche Universität,4,938,https://www.studycheck.de/hochschulen/med-uni-wien,2004,6867,,
+378,Merz Akademie,Private Fachhochschule,2,,https://www.studycheck.de/hochschulen/merz-akademie,1918,249,75,
+379,Met Film School Berlin,Private Fachhochschule,6,,https://www.studycheck.de/hochschulen/metfilmschool,2012,1000,,
+380,MHB Medizinische Hochschule Brandenburg Theodor Fontane,Private Universität,3,919,https://www.studycheck.de/hochschulen/mhb-fontane,2014,519,,48
+381,MHH - Medizinische Hochschule Hannover,Staatliche Universität,11,910,https://www.studycheck.de/hochschulen/mh-hannover,1961,3683,,146
+382,Modul University Vienna,Private Universität,15,,https://www.studycheck.de/hochschulen/modul-uni,2007,867,,
+383,Montanuniverstität Leoben,Staatliche Universität,18,914,https://www.studycheck.de/hochschulen/uni-leoben,1840,3449,,
+384,MSB Medical School Berlin,Private Fachhochschule,17,957,https://www.studycheck.de/hochschulen/msb,2012,2036,,62
+385,MSH Medical School Hamburg,Private Fachhochschule,32,1111,https://www.studycheck.de/hochschulen/msh-hamburg,2009,3497,,73
+386,MUK - Musik und Kunst Privatuniversität der Stadt Wien,Private Universität,140,,https://www.studycheck.de/hochschulen/muk-wien,1938,850,280,
+387,Munich Business School,Private Fachhochschule,6,,https://www.studycheck.de/hochschulen/mbs,1991,579,120,15
+388,Musikakademie der Stadt Kassel,Staatliche Akademie,1,,https://www.studycheck.de/hochschulen/ma-kassel,1955,,60,
+389,Musikhochschule Lübeck,Staatliche Kunst- / Musikhochschule,4,,https://www.studycheck.de/hochschulen/hfm-luebeck,1973,397,,30
+390,Muthesius Kunsthochschule,Staatliche Kunst- / Musikhochschule,12,,https://www.studycheck.de/hochschulen/kuh-kiel,2005,552,,31
+391,NBS Northern Business School,Private Fachhochschule,11,932,https://www.studycheck.de/hochschulen/nbs,2007,985,,24
+392,New Design University,Private Universität,14,875,https://www.studycheck.de/hochschulen/ndu,2004,600,,
+393,NoA Norddeutsche Akademie für Finanzen und Steuerrecht Hamburg,Staatliche Fachhochschule,1,,https://www.studycheck.de/hochschulen/noa,2010,340,,25
+394,NORDAKADEMIE,Private Fachhochschule,11,925,https://www.studycheck.de/hochschulen/nordakademie,1992,2737,,28
+395,Norddeutsche Hochschule für Rechtspflege,Private Fachhochschule,1,,https://www.studycheck.de/hochschulen/ndhr,,406,11,7
+396,Ostfalia Hochschule,Staatliche Fachhochschule,60,1115,https://www.studycheck.de/hochschulen/hs-ostfalia,1971,12327,,220
+397,OTH Amberg-Weiden,Staatliche Fachhochschule,52,986,https://www.studycheck.de/hochschulen/oth-aw,1994,3490,,102
+398,OTH Regensburg,Staatliche Fachhochschule,51,1190,https://www.studycheck.de/hochschulen/hs-regensburg,1971,11003,,240
+399,Pädagogische Hochschule Freiburg,Staatliche Universität,53,963,https://www.studycheck.de/hochschulen/ph-freiburg,1962,4865,,64
+400,Pädagogische Hochschule Heidelberg,Staatliche Universität,61,967,https://www.studycheck.de/hochschulen/ph-heidelberg,1962,4534,222,73
+401,Pädagogische Hochschule Ludwigsburg,Staatliche Universität,49,975,https://www.studycheck.de/hochschulen/ph-ludwigsburg,1962,6368,,85
+402,Pädagogische Hochschule Schwäbisch Gmünd,Staatliche Universität,16,856,https://www.studycheck.de/hochschulen/ph-gmuend,1962,3000,280,42
+403,Pädagogische Hochschule Weingarten,Staatliche Universität,63,903,https://www.studycheck.de/hochschulen/ph-weingarten,1949,3316,,250
+404,Palucca Hochschule für Tanz,Staatliche Kunst- / Musikhochschule,4,,https://www.studycheck.de/hochschulen/palucca-dresden,1925,181,,12
+405,Paracelsus Medizinische Privatuniversität,Private Universität,9,,https://www.studycheck.de/hochschulen/pmu,2002,1600,,
+406,Paritätische Akademie Süd,Private Akademie,1,,https://www.studycheck.de/hochschulen/pas,,,,
+407,PFH – Private Hochschule Göttingen,Private Fachhochschule,16,919,https://www.studycheck.de/hochschulen/pfh-goettingen,1995,4226,,35
+408,PH Burgenland,Private Fachhochschule,3,,https://www.studycheck.de/hochschulen/ph-burgenland,2007,611,,
+409,PH Karlsruhe,Staatliche Universität,57,961,https://www.studycheck.de/hochschulen/ph-karlsruhe,1962,3700,,50
+410,PH Kärnten,Staatliche Fachhochschule,4,,https://www.studycheck.de/hochschulen/ph-kaernten,2007,717,,
+411,PH Linz,Private Fachhochschule,17,834,https://www.studycheck.de/hochschulen/ph-linz,1968,1335,,
+412,PH Niederösterreich,Staatliche Fachhochschule,11,,https://www.studycheck.de/hochschulen/ph-noe,2007,1413,,
+413,PH Oberösterreich,Staatliche Fachhochschule,5,,https://www.studycheck.de/hochschulen/ph-ooe,2007,1823,,
+414,PH Salzburg,Staatliche Fachhochschule,5,,https://www.studycheck.de/hochschulen/ph-salzburg,1968,1116,,
+415,PH Steiermark,Staatliche Fachhochschule,17,870,https://www.studycheck.de/hochschulen/ph-steiermark,2007,2620,,
+416,PH Tirol,Staatliche Fachhochschule,11,,https://www.studycheck.de/hochschulen/ph-tirol,2007,1134,,
+417,PH Vorarlberg,Staatliche Fachhochschule,1,,https://www.studycheck.de/hochschulen/ph-vorarlberg,2007,500,,
+418,PH Wien,Staatliche Fachhochschule,6,790,https://www.studycheck.de/hochschulen/ph-wien,2007,3324,,
+419,PHB - Psychologische Hochschule Berlin,Private Universität,6,,https://www.studycheck.de/hochschulen/phb-berlin,2010,471,,17
+420,Philosophisch-Theologische Hochschule Frankfurt am Main,Kirchliche Fachhochschule,2,,https://www.studycheck.de/hochschulen/pth-ffm,1926,262,3,14
+421,Philosophisch-Theologische Hochschule Münster,Kirchliche Fachhochschule,1,,https://www.studycheck.de/hochschulen/pth-muenster,1971,7,26,13
+422,PHWT Vechta/Diepholz,Private Fachhochschule,6,,https://www.studycheck.de/hochschulen/phwt-vechta,1998,567,,23
+423,Polizeiakademie,Staatliche Akademie,1,873,https://www.studycheck.de/hochschulen/pa,2007,,,
+424,Popakademie Baden-Württemberg,Staatliche Kunst- / Musikhochschule,5,,https://www.studycheck.de/hochschulen/popaka-bawue,2003,370,,
+425,PPH Augustinum,Private Fachhochschule,4,,https://www.studycheck.de/hochschulen/pph-augustinum,2007,653,,
+426,Provadis Hochschule,Private Fachhochschule,11,842,https://www.studycheck.de/hochschulen/provadis,2003,1121,,35
+427,Quadriga Hochschule,Private Fachhochschule,7,,https://www.studycheck.de/hochschulen/quadriga,2009,99,53,15
+428,RFH Köln,Private Fachhochschule,33,944,https://www.studycheck.de/hochschulen/rfh-koeln,1958,6224,,143
+429,RPTU,Staatliche Universität,146,1212,https://www.studycheck.de/hochschulen/rptu,2023,20000,,300
+430,RSH Düsseldorf,Staatliche Kunst- / Musikhochschule,28,,https://www.studycheck.de/hochschulen/rsh-duesseldorf,1935,982,200,45
+431,Ruhr Uni Bochum,Staatliche Universität,190,1341,https://www.studycheck.de/hochschulen/uni-bochum,1961,42739,,443
+432,RWTH Aachen,Staatliche Universität,163,1341,https://www.studycheck.de/hochschulen/rwth-aachen,1870,47362,,553
+433,RWTH Business School,Private Akademie,4,,https://www.studycheck.de/hochschulen/rwth-business,,,,
+434,RWU – Ravensburg Weingarten University of Applied Sciences,Staatliche Fachhochschule,32,980,https://www.studycheck.de/hochschulen/rwu,1964,3784,,103
+435,SAE Institute,Private Akademie,10,,https://www.studycheck.de/hochschulen/sae,1976,,,
+436,SBA | Management School,Private Fachhochschule,8,,https://www.studycheck.de/hochschulen/sba,2001,,,
+437,School CIFoS,Private Fachhochschule,1,,https://www.studycheck.de/hochschulen/school-cifos,2014,,,
+438,School GRC,Private Fachhochschule,2,,https://www.studycheck.de/hochschulen/school-grc,2004,,,
+439,School of Management and Technology,Private Fachhochschule,6,,https://www.studycheck.de/hochschulen/steinbeis-smt,2015,8100,,
+440,Sigmund Freud PrivatUniversität Berlin,Private Universität,17,878,https://www.studycheck.de/hochschulen/sfu-berlin,2013,180,,
+441,SRH Berlin University of Applied Sciences,Private Fachhochschule,60,773,https://www.studycheck.de/hochschulen/srh-berlin,2002,2029,,85
+442,SRH Fachschulen,Private Fachhochschule,2,,https://www.studycheck.de/hochschulen/srh-karlsruhe,1966,2200,,14
+443,SRH Hochschule für Gesundheit,Private Fachhochschule,15,867,https://www.studycheck.de/hochschulen/gera-fh,2006,1344,44,28
+444,SRH Hochschule Heidelberg,Private Fachhochschule,38,888,https://www.studycheck.de/hochschulen/hs-heidelberg,1969,3403,,89
+445,SRH Hochschule in Nordrhein-Westfalen,Private Fachhochschule,11,,https://www.studycheck.de/hochschulen/fh-hamm,2005,715,70,37
+446,SRH Wilhelm Löhe Hochschule (SRH WLH),Private Fachhochschule,14,,https://www.studycheck.de/hochschulen/wlh-fuerth,2012,400,,10
+447,Staatliche Akademie der Bildenden Künste Karlsruhe,Staatliche Kunst- / Musikhochschule,2,,https://www.studycheck.de/hochschulen/ka-karlsruhe,1854,337,,22
+448,Staatliche Akademie der Bildenden Künste Stuttgart,Staatliche Kunst- / Musikhochschule,19,,https://www.studycheck.de/hochschulen/abk-stuttgart,1761,819,,58
+449,Staatliche Hochschule für Bildende Künste (Städelschule),Staatliche Kunst- / Musikhochschule,1,,https://www.studycheck.de/hochschulen/hfbk-ffm,1817,127,,12
+450,Staatliche Hochschule für Gestaltung Karlsruhe,Staatliche Kunst- / Musikhochschule,5,,https://www.studycheck.de/hochschulen/hfg-karlsruhe,1992,392,,13
+451,Staatliche Hochschule für Musik Trossingen,Staatliche Kunst- / Musikhochschule,26,,https://www.studycheck.de/hochschulen/hfm-trossingen,1944,419,,64
+452,Steinbeis School of International Business and Entrepreneurship (SIBE),Private Akademie,3,,https://www.studycheck.de/hochschulen/sibe,1994,800,67,
+453,Steinbeis School of Management and Innovation,Private Fachhochschule,10,,https://www.studycheck.de/hochschulen/smi,1998,8000,1200,100
+454,Steinbeis-Hochschule,Private Fachhochschule,15,,https://www.studycheck.de/hochschulen/shb-berlin,1998,7034,,63
+455,Steuer-Fachschule Dr. Endriss,Private Akademie,1,,https://www.studycheck.de/hochschulen/endriss,1950,,,
+456,Steuerakademie Niedersachsen,Staatliche Akademie,1,,https://www.studycheck.de/hochschulen/stakad-nds,2006,,,
+457,Studienakademie Breitenbrunn,Staatliche Akademie,4,817,https://www.studycheck.de/hochschulen/sab,1991,650,3,11
+458,SWS Schulen,Private Akademie,3,,https://www.studycheck.de/hochschulen/sws,,,,
+459,TAE Technische Akademie Esslingen,Private Akademie,7,,https://www.studycheck.de/hochschulen/tae,1955,,,
+460,TAW Technische Akademie Wuppertal,Private Akademie,11,,https://www.studycheck.de/hochschulen/taw,1948,,,
+461,Technische Hochschule Ingolstadt,Staatliche Fachhochschule,75,1200,https://www.studycheck.de/hochschulen/thi,1994,6018,,140
+462,Technische Hochschule Lübeck,Staatliche Fachhochschule,31,972,https://www.studycheck.de/hochschulen/th-luebeck,1969,5157,,126
+463,Technische Hochschule Ostwestfalen-Lippe,Staatliche Fachhochschule,56,1235,https://www.studycheck.de/hochschulen/th-owl,1971,6618,,169
+464,Technische Hochschule Rosenheim,Staatliche Fachhochschule,47,1025,https://www.studycheck.de/hochschulen/th-rosenheim,1971,6339,,157
+465,TH Aschaffenburg,Staatliche Fachhochschule,20,1053,https://www.studycheck.de/hochschulen/th-aschaffenburg,1995,3329,,102
+466,TH Bingen,Staatliche Fachhochschule,23,908,https://www.studycheck.de/hochschulen/th-bingen,1897,2535,,70
+467,TH Brandenburg,Staatliche Fachhochschule,18,893,https://www.studycheck.de/hochschulen/th-brandenburg,1992,2755,,61
+468,TH Köln,Staatliche Fachhochschule,85,1268,https://www.studycheck.de/hochschulen/th-koeln,1971,26816,,440
+469,TH Nürnberg,Staatliche Fachhochschule,54,1129,https://www.studycheck.de/hochschulen/th-nuernberg,1971,12821,,323
+470,TH Wildau,Staatliche Fachhochschule,31,1008,https://www.studycheck.de/hochschulen/wildau-th,1991,3717,,100
+471,THD - Technische Hochschule Deggendorf,Staatliche Fachhochschule,73,1011,https://www.studycheck.de/hochschulen/thd-deggendorf,1994,8500,260,165
+472,Theaterakademie August Everding,Staatliche Akademie,11,,https://www.studycheck.de/hochschulen/theaterakademie,1993,,,
+473,Theologische Fakultät Fulda,Kirchliche Fachhochschule,1,,https://www.studycheck.de/hochschulen/thf-fulda,1734,38,,11
+474,Theologische Fakultät Paderborn,Kirchliche Fachhochschule,1,,https://www.studycheck.de/hochschulen/tf-paderborn,1614,92,,15
+475,Theologische Fakultät Trier,Kirchliche Fachhochschule,7,,https://www.studycheck.de/hochschulen/tf-trier,1950,157,,21
+476,Theologische Hochschule Elstal,Kirchliche Fachhochschule,3,,https://www.studycheck.de/hochschulen/th-elstal,1880,62,,8
+477,Theologische Hochschule Ewersbach,Private Fachhochschule,3,,https://www.studycheck.de/hochschulen/the,1912,67,18,7
+478,Theologische Hochschule Friedensau,Kirchliche Fachhochschule,7,,https://www.studycheck.de/hochschulen/th-friedensau,1899,175,,11
+479,Theologische Hochschule Reutlingen,Kirchliche Fachhochschule,4,,https://www.studycheck.de/hochschulen/th-reutlingen,1877,68,,9
+480,THGA Bochum,Private Fachhochschule,16,,https://www.studycheck.de/hochschulen/thga-bochum,1816,2413,,32
+481,THM - Technische Hochschule Mittelhessen,Staatliche Fachhochschule,64,1174,https://www.studycheck.de/hochschulen/thm,1971,18796,1143,240
+482,THU - Technische Hochschule Ulm,Staatliche Fachhochschule,23,924,https://www.studycheck.de/hochschulen/th-ulm,1960,3757,,123
+483,Thüringer VFHS,Staatliche Fachhochschule,3,,https://www.studycheck.de/hochschulen/tvfhs,1994,507,,
+484,THWS - Technische Hochschule Würzburg-Schweinfurt,Staatliche Fachhochschule,46,1224,https://www.studycheck.de/hochschulen/thws,1971,9300,270,240
+485,TiHo - Tierärztliche Hochschule Hannover,Staatliche Universität,2,859,https://www.studycheck.de/hochschulen/tiho-hannover,1778,2400,,50
+486,Touro College Berlin,Private Fachhochschule,6,,https://www.studycheck.de/hochschulen/touro-berlin,2003,125,,
+487,TU Bergakademie Freiberg,Staatliche Universität,71,929,https://www.studycheck.de/hochschulen/tu-freiberg,1765,4050,,89
+488,TU Berlin,Staatliche Universität,131,1231,https://www.studycheck.de/hochschulen/tu-berlin,1879,35012,,335
+489,TU Braunschweig,Staatliche Universität,89,1186,https://www.studycheck.de/hochschulen/tu-braunschweig,1745,18566,,242
+490,TU Chemnitz,Staatliche Universität,102,1103,https://www.studycheck.de/hochschulen/tu-chemnitz,1836,9752,,166
+491,TU Clausthal,Staatliche Universität,36,851,https://www.studycheck.de/hochschulen/tu-clausthal,1775,3697,,80
+492,TU Darmstadt,Staatliche Universität,121,1201,https://www.studycheck.de/hochschulen/tu-darmstadt,1877,25355,,319
+493,TU Dortmund,Staatliche Universität,136,1341,https://www.studycheck.de/hochschulen/tu-dortmund,1968,33272,,300
+494,TU Graz,Staatliche Universität,45,1048,https://www.studycheck.de/hochschulen/tu-graz,1811,16039,,
+495,TU Ilmenau,Staatliche Universität,46,974,https://www.studycheck.de/hochschulen/tu-ilmenau,1992,5225,,95
+496,TU Wien,Staatliche Universität,63,1022,https://www.studycheck.de/hochschulen/tu-wien,1815,25951,,
+497,TUD - TU Dresden,Staatliche Universität,141,1342,https://www.studycheck.de/hochschulen/tu-dresden,1828,30079,,456
+498,TUHH - TU Hamburg,Staatliche Universität,49,940,https://www.studycheck.de/hochschulen/tu-hamburg,1978,7180,,94
+499,TUM - TU München,Staatliche Universität,144,1373,https://www.studycheck.de/hochschulen/tu-muenchen,1868,44281,,612
+500,UMCH | Universitätsmedizin Neumarkt A. M. Campus Hamburg,Staatliche Universität,1,,https://www.studycheck.de/hochschulen/umch-hamburg,,150,,
+501,UMIT TIROL,Private Universität,17,,https://www.studycheck.de/hochschulen/umit-tirol,2001,1335,,
+502,Uni Augsburg,Staatliche Universität,105,1254,https://www.studycheck.de/hochschulen/uni-augsburg,1970,20060,,245
+503,Uni Bamberg,Staatliche Universität,117,1081,https://www.studycheck.de/hochschulen/uni-bamberg,1647,,,
+504,Uni Bayreuth,Staatliche Universität,142,1136,https://www.studycheck.de/hochschulen/uni-bayreuth,1975,13166,,238
+505,Uni Bielefeld,Staatliche Universität,137,1280,https://www.studycheck.de/hochschulen/uni-bielefeld,1969,24396,2096,323
+506,Uni Bonn,Staatliche Universität,202,1332,https://www.studycheck.de/hochschulen/uni-bonn,1818,,,
+507,Uni der Bundeswehr Hamburg,Staatliche Universität,33,881,https://www.studycheck.de/hochschulen/hsu-hamburg,1972,2603,,106
+508,Uni der Bundeswehr München,Staatliche Universität,37,894,https://www.studycheck.de/hochschulen/ubw-muenchen,1973,3775,,190
+509,Uni des Saarlandes,Staatliche Universität,138,1324,https://www.studycheck.de/hochschulen/uni-saarbruecken,1948,15875,1595,280
+510,Uni Duisburg-Essen,Staatliche Universität,170,1329,https://www.studycheck.de/hochschulen/uni-due,2003,42094,,501
+511,Uni Düsseldorf,Staatliche Universität,80,1334,https://www.studycheck.de/hochschulen/uni-duesseldorf,1965,36070,,339
+512,Uni Erfurt,Staatliche Universität,48,1101,https://www.studycheck.de/hochschulen/uni-erfurt,1994,6240,,102
+513,Uni Flensburg,Staatliche Universität,69,1014,https://www.studycheck.de/hochschulen/uni-flensburg,1946,6354,121,79
+514,Uni Frankfurt,Staatliche Universität,176,1338,https://www.studycheck.de/hochschulen/uni-frankfurt,1914,44976,,583
+515,Uni Frankfurt (Oder),Staatliche Universität,26,946,https://www.studycheck.de/hochschulen/europa-uni,1991,5573,,73
+516,Uni Freiburg,Staatliche Universität,225,1222,https://www.studycheck.de/hochschulen/uni-freiburg,1457,23659,,314
+517,Uni Göttingen,Staatliche Universität,199,1334,https://www.studycheck.de/hochschulen/uni-goettingen,1737,29688,,411
+518,Uni Graz,Staatliche Universität,128,1049,https://www.studycheck.de/hochschulen/uni-graz,1585,28828,,
+519,Uni Greifswald,Staatliche Universität,95,1055,https://www.studycheck.de/hochschulen/uni-greifswald,1456,10288,1900,230
+520,Uni Halle-Wittenberg,Staatliche Universität,188,1293,https://www.studycheck.de/hochschulen/uni-halle,1502,20808,,335
+521,Uni Hamburg,Staatliche Universität,233,1307,https://www.studycheck.de/hochschulen/uni-hamburg,1919,43772,,673
+522,Uni Hannover,Staatliche Universität,143,1318,https://www.studycheck.de/hochschulen/uni-hannover,1831,29439,,357
+523,Uni Heidelberg,Staatliche Universität,169,1288,https://www.studycheck.de/hochschulen/uni-heidelberg,1386,28102,,533
+524,Uni Hildesheim,Staatliche Universität,79,1062,https://www.studycheck.de/hochschulen/uni-hildesheim,1978,8391,,93
+525,Uni Hohenheim,Staatliche Universität,41,1057,https://www.studycheck.de/hochschulen/uni-hohenheim,1818,8675,,126
+526,Uni Innsbruck,Staatliche Universität,151,1090,https://www.studycheck.de/hochschulen/uni-innsbruck,1669,28106,,300
+527,Uni Jena,Staatliche Universität,163,1314,https://www.studycheck.de/hochschulen/uni-jena,1558,17604,,380
+528,Uni Kassel,Staatliche Universität,111,1187,https://www.studycheck.de/hochschulen/uni-kassel,1971,24471,,285
+529,Uni Kiel,Staatliche Universität,170,1317,https://www.studycheck.de/hochschulen/uni-kiel,1665,27751,1014,425
+530,Uni Klagenfurt,Staatliche Universität,71,959,https://www.studycheck.de/hochschulen/uni-klagenfurt,1970,11758,,
+531,Uni Koblenz,Staatliche Universität,80,995,https://www.studycheck.de/hochschulen/uni-koblenz,2023,9400,,
+532,Uni Köln,Staatliche Universität,216,1323,https://www.studycheck.de/hochschulen/uni-koeln,1388,54175,,522
+533,Uni Konstanz,Staatliche Universität,108,1121,https://www.studycheck.de/hochschulen/uni-konstanz,1966,11164,,209
+534,Uni Leipzig,Staatliche Universität,172,1341,https://www.studycheck.de/hochschulen/uni-leipzig,1409,29870,,1151
+535,Uni Linz,Staatliche Universität,70,1012,https://www.studycheck.de/hochschulen/uni-linz,1966,22573,,
+536,Uni Lübeck,Staatliche Universität,31,984,https://www.studycheck.de/hochschulen/uni-luebeck,1964,5647,,151
+537,Uni Lüneburg,Staatliche Universität,71,1072,https://www.studycheck.de/hochschulen/leuphana,1946,9900,591,215
+538,Uni Magdeburg,Staatliche Universität,114,1109,https://www.studycheck.de/hochschulen/uni-magdeburg,1993,13562,,198
+539,Uni Mainz,Staatliche Universität,213,1326,https://www.studycheck.de/hochschulen/uni-mainz,1477,31034,,567
+540,Uni Mannheim,Staatliche Universität,72,1182,https://www.studycheck.de/hochschulen/uni-mannheim,1907,11303,840,200
+541,Uni Marburg,Staatliche Universität,141,1299,https://www.studycheck.de/hochschulen/uni-marburg,1527,22870,,362
+542,Uni Mozarteum Salzburg,Staatliche Universität,134,,https://www.studycheck.de/hochschulen/uni-mozarteum,1841,1850,,
+543,Uni Münster,Staatliche Universität,245,1341,https://www.studycheck.de/hochschulen/uni-muenster,1780,44459,,604
+544,Uni Osnabrück,Staatliche Universität,128,1208,https://www.studycheck.de/hochschulen/uni-osnabrueck,1974,13995,1074,219
+545,Uni Paderborn,Staatliche Universität,142,1254,https://www.studycheck.de/hochschulen/uni-paderborn,1972,19985,,260
+546,Uni Passau,Staatliche Universität,39,1150,https://www.studycheck.de/hochschulen/uni-passau,1978,12627,,129
+547,Uni Potsdam,Staatliche Universität,154,1212,https://www.studycheck.de/hochschulen/uni-potsdam,1991,22006,,317
+548,Uni Regensburg,Staatliche Universität,146,1316,https://www.studycheck.de/hochschulen/uni-regensburg,1962,20987,,382
+549,Uni Rostock,Staatliche Universität,156,1106,https://www.studycheck.de/hochschulen/uni-rostock,1419,12879,,280
+550,Uni Salzburg,Staatliche Universität,112,976,https://www.studycheck.de/hochschulen/uni-salzburg,1622,18000,,291
+551,Uni Siegen,Staatliche Universität,129,1184,https://www.studycheck.de/hochschulen/uni-siegen,1972,18847,,257
+552,Uni Stuttgart,Staatliche Universität,144,1308,https://www.studycheck.de/hochschulen/uni-stuttgart,1829,23614,,265
+553,Uni Trier,Staatliche Universität,134,1072,https://www.studycheck.de/hochschulen/uni-trier,1970,11907,,153
+554,Uni Tübingen,Staatliche Universität,259,1343,https://www.studycheck.de/hochschulen/uni-tuebingen,1477,26982,,529
+555,Uni Ulm,Staatliche Universität,62,1029,https://www.studycheck.de/hochschulen/uni-ulm,1967,10170,,219
+556,Uni Vechta,Staatliche Universität,37,971,https://www.studycheck.de/hochschulen/uni-vechta,1830,4777,,73
+557,Uni Weimar,Staatliche Universität,33,977,https://www.studycheck.de/hochschulen/uni-weimar,1860,4065,,88
+558,Uni Wien,Staatliche Universität,229,1318,https://www.studycheck.de/hochschulen/uni-wien,1365,86260,,
+559,Uni Witten/Herdecke,Private Universität,13,1005,https://www.studycheck.de/hochschulen/uni-witten,1982,2765,,
+560,Uni Wuppertal,Staatliche Universität,134,1298,https://www.studycheck.de/hochschulen/uni-wuppertal,1972,22760,,261
+561,Uni Würzburg,Staatliche Universität,180,1348,https://www.studycheck.de/hochschulen/uni-wuerzburg,1402,27000,,440
+562,Universität Bremen,Staatliche Universität,129,1161,https://www.studycheck.de/hochschulen/uni-bremen,1971,18606,,320
+563,Universität der Künste Berlin,Staatliche Kunst- / Musikhochschule,61,897,https://www.studycheck.de/hochschulen/udk-berlin,1699,4133,,228
+564,Universität für Bodenkultur Wien,Staatliche Universität,38,933,https://www.studycheck.de/hochschulen/boku,1872,10532,64,100
+565,University of Europe for Applied Sciences,Private Fachhochschule,39,750,https://www.studycheck.de/hochschulen/ue,2017,2978,,
+566,Verwaltungs- und Wirtschafts-Akademie Rhein-Neckar e.V.,Private Akademie,1,,https://www.studycheck.de/hochschulen/vwa-rn,,,,
+567,Verwaltungs- und Wirtschafts-Akademie Wiesbaden,Private Akademie,1,,https://www.studycheck.de/hochschulen/vwa-wiesbaden,,,63,
+568,Vetmeduni Wien,Staatliche Universität,5,938,https://www.studycheck.de/hochschulen/vetmeduni,1765,2346,,
+569,VICTORIA,Private Fachhochschule,5,839,https://www.studycheck.de/hochschulen/victoria-berlin,2011,645,,18
+570,Vinzenz Pallotti University,Kirchliche Fachhochschule,7,,https://www.studycheck.de/hochschulen/vp-uni,1896,402,,36
+571,Vorarlberger Landeskonservatorium,Staatliche Kunst- / Musikhochschule,2,,https://www.studycheck.de/hochschulen/vlk,1977,360,,
+572,VWA Business School,Private Akademie,2,,https://www.studycheck.de/hochschulen/vwa-bs,,,,
+573,VWA und Berufsakademie Göttingen,Private Akademie,3,,https://www.studycheck.de/hochschulen/vwa-goettingen,1936,,,70
+574,VWA-Hochschule,Private Fachhochschule,0,,https://www.studycheck.de/hochschulen/vwa-bw,2014,244,,11
+575,Waldorf Institut Witten Annen,Private Akademie,5,,https://www.studycheck.de/hochschulen/iwp,1973,,20,
+576,Webster University Vienna,Private Universität,9,,https://www.studycheck.de/hochschulen/webster-uni,1981,482,,
+577,Weißensee Kunsthochschule Berlin,Staatliche Kunst- / Musikhochschule,13,,https://www.studycheck.de/hochschulen/kh-berlin,1946,891,,41
+578,WH - Westfälische Hochschule,Staatliche Fachhochschule,53,1003,https://www.studycheck.de/hochschulen/westfaelische-hs,1992,8690,,192
+579,WHU - Otto Beisheim School of Management,Private Universität,8,1000,https://www.studycheck.de/hochschulen/whu,1984,1880,,59
+580,WHZ - Westsächsische Hochschule Zwickau,Staatliche Fachhochschule,54,925,https://www.studycheck.de/hochschulen/fh-zwickau,1897,3290,,135
+581,Wiesbadener Musikakademie,Staatliche Akademie,2,,https://www.studycheck.de/hochschulen/wma,,,,
+582,WIHOGA Dortmund,Private Akademie,2,,https://www.studycheck.de/hochschulen/wihoga,1959,300,,
+583,Wirtschaftsuniversität Wien,Staatliche Universität,19,1125,https://www.studycheck.de/hochschulen/wu-wien,1898,19632,,
+584,WU Executive Academy,Staatliche Universität,14,,https://www.studycheck.de/hochschulen/wuexecutive,2005,,,
+585,Württembergische Verwaltungs- und Wirtschafts-Akademie e.V.,Private Akademie,1,,https://www.studycheck.de/hochschulen/vwa-wuertt,1928,,,
+586,XU Exponential University,Private Fachhochschule,5,,https://www.studycheck.de/hochschulen/xu,2018,150,13,3
+587,Zeppelin Universität,Private Universität,15,948,https://www.studycheck.de/hochschulen/zeppelin-uni,2003,871,,48
