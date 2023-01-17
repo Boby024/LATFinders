@@ -1,0 +1,39 @@
+<div class="d-flex flex-md-row gap-5 container">
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>Select an Uni</mat-label>
+      <mat-select [(value)]="uni" (selectionChange)="setCourses($event)">
+        <mat-option *ngFor="let uni of unis" [value]="uni">
+          {{uni.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>Select an Course from the Uni</mat-label>
+      <mat-select [(value)]="course" [disabled]="is_uni_selected">
+        <mat-option *ngFor="let course of courses" [value]="course">
+          {{course.course_name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>
+
+<div>
+  <plotly-plot [data]="ratingsPlot?.data" [layout]="ratingsPlot?.layout"></plotly-plot>
+</div>
+
+<div class="d-flex justify-content-center">
+  <button mat-raised-button color="primary">Get a more detailed analysis</button>
+</div>
+
+
+<!--
+<div>
+  <mat-form-field appearance="outline">
+    <mat-label>Search Uni</mat-label>
+    <input matInput (keyup)="onKeyUniName($event)">
+  </mat-form-field>
+</div>-->

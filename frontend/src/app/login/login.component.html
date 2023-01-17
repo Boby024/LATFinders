@@ -1,1 +1,46 @@
-<p>login works!</p>
+
+<div class="d-flex flex-md-column text-center gap-3" style="margin-top: 150px;">
+  <div><h1 style="font-size: 60px">ARA</h1></div>
+  <div style="font-size: 30px">Your Advanced Review Analyser</div>
+</div>
+
+<div class="container" style="margin-top: 50px">
+  <form [formGroup]="user">
+    <div class="mb-3"> <!--class="w-25"-->
+      <label for="exampleInputEmail1" class="form-label">Username</label>
+      <input type="text" formControlName="username" class="form-control" id="exampleInputEmail1" aria-describedby="username">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1">
+      <div id="password-ms" class="form-text">We'll never share your password with anyone else.</div>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary tex">Submit</button>
+    </div>
+  </form>
+</div>
+
+<!--<div>
+  <form [formGroup]="user">
+    <div class="d-flex flex-md-column">
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Username</mat-label>
+          <input matInput formControlName="username">
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password">
+        </mat-form-field>
+      </div>
+    </div>
+  </form>
+</div>-->
+

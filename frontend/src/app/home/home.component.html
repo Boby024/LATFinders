@@ -1,7 +1,18 @@
 
-<div class="d-flex align-items-center justify-content-center">
-  <div><h1>ARA</h1></div>
+<div class="d-flex flex-md-column text-center gap-3" style="margin-top: 20px;">
+  <div><h1 style="font-size: 60px">ARA</h1></div>
+  <div style="font-size: 30px">Your Advanced Review Analyser</div>
 </div>
 
+<!--<plotly-plot [data]="ratingsPlot?.data" [layout]="ratingsPlot?.layout"></plotly-plot>-->
 
-<plotly-plot [data]="ratingsPlot?.data" [layout]="ratingsPlot?.layout"></plotly-plot>'
+
+<div class="d-flex flex-md-row gap-5 mt-5">
+  <div>
+    <app-analytic></app-analytic>
+  </div>
+  <mat-divider [vertical]="true"></mat-divider>
+  <div>
+    <app-analytic></app-analytic>
+  </div>
+</div>

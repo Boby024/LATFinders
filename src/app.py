@@ -24,6 +24,16 @@ def get_unis():
 def get_courses():
     return jsonify(model_service.get_all_courses())
 
+@app.route('/filter_unis', methods=['GET'])
+def filter_unis():
+    return jsonify(model_service.filter_unis(request.args))
+
+@app.route('/filter_courses', methods=['GET'])
+def filter_courses():
+    return jsonify(model_service.filter_courses(request.args))
+
+
+
 @app.route('/ratings', methods=['GET'])
 def get_ratings():
     return jsonify(model_service.get_all_ratings())

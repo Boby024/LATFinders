@@ -9,6 +9,13 @@ import {HttpClientModule} from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {PlotlyModule} from "angular-plotly.js";
 import * as PlotlyJS from 'plotly.js-dist-min';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
+import {MatListModule} from "@angular/material/list";
+import { AnalyticComponent } from './analytic/analytic.component';
+import {MatSelectModule} from "@angular/material/select";
+import {MatButtonModule} from '@angular/material/button';
 
 PlotlyModule.plotlyjs = PlotlyJS;
 const routes: Routes = [
@@ -20,7 +27,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    AnalyticComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +37,12 @@ const routes: Routes = [
     HttpClientModule,
     BrowserAnimationsModule,
     PlotlyModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatListModule,
+    MatSelectModule,
+    MatButtonModule
   ],
   exports: [RouterModule],
   providers: [],
