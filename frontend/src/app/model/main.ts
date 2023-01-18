@@ -55,3 +55,9 @@ export interface SearchQuery {
   id?: number,
   query?: string
 }
+
+export interface AnalyticQuery {
+  uni_id?: number,
+  course_id?: number,
+  rating_gender?: string
+}

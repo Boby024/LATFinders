@@ -3,9 +3,11 @@ import json
 import plotly
 import plotly.express as px
 from utils import response
+from model.rating import Rating
 
 
 def plot_ratings(data):
+
     title = "Rating Courses"
     df = pd.DataFrame(data)
     fig = px.line(df, x="date", y="overall_rating", labels={
@@ -15,4 +17,5 @@ def plot_ratings(data):
     # graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
     graphJSON = plotly.io.to_json(fig, pretty=True)
 
-    return response.setRep(graphJSON, "f")
+    return graphJSON # response.setRep(graphJSON, "f")
+

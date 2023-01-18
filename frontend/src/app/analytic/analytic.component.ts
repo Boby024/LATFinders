@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MainService} from "../service/main.service";
-import {Course, SearchQuery, Uni} from "../model/main";
+import {AnalyticQuery, Course, SearchQuery, Uni} from "../model/main";
 
 @Component({
   selector: 'app-analytic',
@@ -17,6 +17,7 @@ export class AnalyticComponent implements OnInit {
   unis: Uni[] = [];
   courses: Course[] = [];
   public ratingsPlot: any;
+  is_rating = true;
 
   constructor(
     private mainService: MainService
@@ -24,8 +25,6 @@ export class AnalyticComponent implements OnInit {
 
   ngOnInit(): void {
     this.getUnis();
-
-    this.getRatingPlotted();
   }
 
   getUnis() {
@@ -45,24 +44,31 @@ export class AnalyticComponent implements OnInit {
     });
   }*/
 
-  setCourses(e: any) {
+  setUnis(e: any) {
     const value = e.value;
-    const s = {id: value.id, query: value.name};
+    const uniID = value.id;
     this.is_uni_selected = false;
 
-    this.filterCourses(s)
+    this.getCoursesByUniID(uniID);
   }
 
-  filterCourses(s: SearchQuery) {
-    this.mainService.filterCourses(s).subscribe((data) => {
+  setCourse(e: any) {
+    const value = e.value;
+    const courseID = value.id;
+
+    this.getRatingPlotted(courseID);
+  }
+
+  getCoursesByUniID(uniID: number) {
+    this.mainService.getCoursesByUniID(uniID).subscribe((data) => {
       this.courses = data;
     });
   }
 
-  getRatingPlotted() {
-    this.mainService.getRatingPlotted().subscribe((data) => {
+  getRatingPlotted(course_id: number) {
+    this.mainService.getRatingPlotted(course_id).subscribe((data) => {
       this.ratingsPlot = data;
-      console.warn(this.ratingsPlot);
+      this.is_rating = false;
     });
   }
 }

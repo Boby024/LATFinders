@@ -5,6 +5,7 @@ from operator import or_, and_
 from sqlalchemy import func
 
 
+
 def get_all_unis():
     unis = Uni.query.all() 
     unis = [d.serialize() for d in unis]
@@ -17,8 +18,27 @@ def get_all_courses():
     return courses
 
 
+def get_all_courses_by_uni_id(params): # request.args
+    uni_id = params.get("uni_id")
+    courses = Course.query.filter(Course.uni_id == uni_id) 
+    courses = [d.serialize() for d in courses]
+    return courses
+
+
 def get_all_ratings():
     ratings = Rating.query.limit(10).all()
+    ratings = [ d.__dict__ for d in ratings]
+
+    return ratings
+
+
+def get_all_ratings_by_params(params): # course_id, rating_gender
+    course_id = params.get("course_id")
+    print(course_id)
+    
+    ratings = Rating.query.filter(Rating.course_id == course_id).limit(10).all()
+
+    # ratings = Rating.query.limit(10).all()
     ratings = [ d.__dict__ for d in ratings]
 
     return ratings
