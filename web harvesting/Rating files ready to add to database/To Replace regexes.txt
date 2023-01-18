@@ -1,0 +1,31 @@
+(\d)\.(\d)
+\1\2
+
+^.*rating.*\r\n
+
+",\r\n(.*)"
+
+"((\w)*)(",)*
+$1
+
+\u00e4
+ä
+
+\u00fc
+ü
+
+\u00df
+ß
+
+\u00f6
+ö
+		
+		
+"courseId": null
+"courseId": 20495
+		
+,\r\n    }
+\r\n    }
+
+date:
+UPDATE araschema.ratings SET date=to_date("reviewDayOfCreation", 'DDMMYYYY') WHERE id>4
