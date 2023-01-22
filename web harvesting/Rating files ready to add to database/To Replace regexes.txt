@@ -19,6 +19,10 @@ $1
 
 \u00f6
 ö
+
+\u00dc
+Ü
+
 		
 		
 "courseId": null
