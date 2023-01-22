@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MainService} from "../service/main.service";
 import {AnalyticQuery, Course, SearchQuery, Uni} from "../model/main";
+import { PlotlyBundleName } from 'angular-plotly.js';
 
 @Component({
   selector: 'app-analytic',
@@ -16,12 +17,13 @@ export class AnalyticComponent implements OnInit {
   course?: Course;
   unis: Uni[] = [];
   courses: Course[] = [];
-  public ratingsPlot: any;
+  public ratingsPlot?: Plotly.PlotlyDataLayoutConfig;
   is_rating = true;
 
   constructor(
     private mainService: MainService
-  ) { }
+  ) {
+   }
 
   ngOnInit(): void {
     this.getUnis();
@@ -68,7 +70,11 @@ export class AnalyticComponent implements OnInit {
   getRatingPlotted(course_id: number) {
     this.mainService.getRatingPlotted(course_id).subscribe((data) => {
       this.ratingsPlot = data;
+      this.setLayoutConfig();
       this.is_rating = false;
     });
+  }
+  setLayoutConfig() {
+    this.ratingsPlot!.layout!.width = 600;
   }
 }
