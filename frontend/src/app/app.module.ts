@@ -17,6 +17,11 @@ import { AnalyticComponent } from './analytic/analytic.component';
 import {MatSelectModule} from "@angular/material/select";
 import {MatButtonModule} from '@angular/material/button';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { NavigationbarComponent } from './navigationbar/navigationbar.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
 
 PlotlyModule.plotlyjs = PlotlyJS;
 const routes: Routes = [
@@ -30,6 +35,7 @@ const routes: Routes = [
     HomeComponent,
     LoginComponent,
     AnalyticComponent,
+    NavigationbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +50,11 @@ const routes: Routes = [
     MatListModule,
     MatSelectModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule
   ],
   exports: [RouterModule],
   providers: [],
