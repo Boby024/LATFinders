@@ -16,6 +16,7 @@ import {MatListModule} from "@angular/material/list";
 import { AnalyticComponent } from './analytic/analytic.component';
 import {MatSelectModule} from "@angular/material/select";
 import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 PlotlyModule.plotlyjs = PlotlyJS;
 const routes: Routes = [
@@ -42,7 +43,8 @@ const routes: Routes = [
     MatInputModule,
     MatListModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule
   ],
   exports: [RouterModule],
   providers: [],
