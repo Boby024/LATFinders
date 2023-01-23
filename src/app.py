@@ -17,25 +17,31 @@ app = create_app()
 def test():
     return {"group": "LATFinders"}
 
+
 @app.route('/unis', methods=['GET'])
 def get_unis():
     return response.setRep(model_service.get_all_unis(), "f")
+
 
 @app.route('/courses', methods=['GET'])
 def get_courses():
     return response.setRep(model_service.get_all_courses(), "f")
 
+
 @app.route('/courses_by_uni_id', methods=['GET'])
 def get_all_courses_by_uni_id():
     return response.setRep(model_service.get_all_courses_by_uni_id(request.args), "f")
+
 
 @app.route('/filter_unis', methods=['GET'])
 def filter_unis():
     return response.setRep(model_service.filter_unis(request.args), "f")
 
+
 @app.route('/filter_courses', methods=['GET'])
 def filter_courses():
     return response.setRep(model_service.filter_courses(request.args), "f")
+
 
 @app.route("/plot_ratings")
 def plot_ratings():
@@ -43,7 +49,13 @@ def plot_ratings():
     return response.setRep(plot_service.plot_ratings(ratings), "f")
 
 
-
+@app.route("/unis/plot_number_of_ratings_by_course_type")
+def plot_number_of_ratings_by_course_type():
+    uni = model_service.get_uni_by_params(request.args)
+    courses = model_service.get_all_courses_by_uni_id(request.args)
+    courses_with_count = model_service.get_course_of_uni_with_degree_types_by_uni(
+        request.args)
+    return response.setRep(plot_service.plot_uni_number_of_ratings_by_degree_type(courses_with_count, uni['name']), "f")
 
 # @app.route('/ratings', methods=['GET'])
 # def get_ratings():
@@ -71,10 +83,8 @@ def plot_ratings():
 #         username = request.form['username']
 #         password = request.form['password']
 #         print(f"username -> {username} and password -> {password}")
-        
+
 #         courses = model_service.get_all_courses()
 #         return render_template("comparison.html", course=courses)
-
-
 if __name__ == '__main__':
     app.run(threaded=True, host=('0.0.0.0'), port=PORT)
