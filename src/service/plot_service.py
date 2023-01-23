@@ -21,7 +21,7 @@ def plot_ratings(data):
     return graphJSON  # response.setRep(graphJSON, "f")
 
 
-def plot_uni_number_of_ratings_by_degree_type(data, uni_name):
+def plot_number_of_ratings_by_uni_id(data, uni_name):
     df = pd.DataFrame(data)
     # Create subplots
     fig = make_subplots(rows=2, cols=3, specs=[[{"type": "pie"}, {"type": "pie"}, {"type": "pie"}], [

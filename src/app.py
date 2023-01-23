@@ -49,13 +49,12 @@ def plot_ratings():
     return response.setRep(plot_service.plot_ratings(ratings), "f")
 
 
-@app.route("/unis/plot_number_of_ratings_by_course_type")
-def plot_number_of_ratings_by_course_type():
+@app.route("/unis/plot_number_of_ratings_by_uni_id")
+def plot_number_of_ratings_by_uni_id():
     uni = model_service.get_uni_by_params(request.args)
-    courses = model_service.get_all_courses_by_uni_id(request.args)
-    courses_with_count = model_service.get_course_of_uni_with_degree_types_by_uni(
+    courses_with_count = model_service.get_courses_and_number_of_ratings_by_uni(
         request.args)
-    return response.setRep(plot_service.plot_uni_number_of_ratings_by_degree_type(courses_with_count, uni['name']), "f")
+    return response.setRep(plot_service.plot_number_of_ratings_by_uni_id(courses_with_count, uni['name']), "f")
 
 # @app.route('/ratings', methods=['GET'])
 # def get_ratings():

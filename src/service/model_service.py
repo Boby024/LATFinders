@@ -25,7 +25,7 @@ def get_all_courses_by_uni_id(params):  # request.args
     return courses
 
 
-def get_course_of_uni_with_degree_types_by_uni(params):
+def get_courses_and_number_of_ratings_by_uni(params):
     uni_id = params.get("uni_id")
     sqlResult = db.engine.execute(text(
         '''
