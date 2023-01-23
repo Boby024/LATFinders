@@ -35,4 +35,8 @@ export class MainService {
   getRatingPlotted(course_id: number): Observable<any>{
     return this.http.get<any>(`${this.main}/plot_ratings?course_id=${course_id}`)
   }
+
+  getNumberOfRatingsPlotted(uni_id: number): Observable<any>{
+    return this.http.get<any>(`${this.main}/unis/plot_number_of_ratings_by_uni_id?uni_id=${uni_id}`)
+  }
 }

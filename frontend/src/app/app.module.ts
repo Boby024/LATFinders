@@ -22,10 +22,12 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
+import { UniversityComponent } from './university/university.component';
+import { UniNumberOfRatingsComponent } from './charts/uni-number-of-ratings/uni-number-of-ratings.component';
 
 PlotlyModule.plotlyjs = PlotlyJS;
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: UniversityComponent },
   { path: 'login', component: LoginComponent },
 ];
 
@@ -36,6 +38,8 @@ const routes: Routes = [
     LoginComponent,
     AnalyticComponent,
     NavigationbarComponent,
+    UniversityComponent,
+    UniNumberOfRatingsComponent,
   ],
   imports: [
     BrowserModule,
