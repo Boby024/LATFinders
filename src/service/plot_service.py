@@ -75,8 +75,12 @@ def plot_course_with_ratings(data, compare_mode):
     dataFrame = pd.DataFrame(data)
     fig = {}
     if dataFrame.size != 0:
+        uni_name = data[0]['name']
+        course_name = data[0]['course_name']
         # Compare based on Age:
-        if compare_mode == 1:
+        if compare_mode == "1":
+            print("HI")
+            print(compare_mode)
             dataFrame = dataFrame.groupby(['author_age']).mean(
                 numeric_only=True).reset_index()
             fig = px.bar(dataFrame, x="author_age", y="overall_rating",
@@ -85,10 +89,10 @@ def plot_course_with_ratings(data, compare_mode):
                              "author_age": "Age Range",
                              "overall_rating": "Average Ratings",
                          },
-                         title="course_name"+" Course Rating: based on age at " + "uni_name")
+                         title=course_name+" Course Rating: based on age at " + uni_name)
 
         # Compare based on Gender:
-        elif compare_mode == 2:
+        elif compare_mode == "2":
 
             dataFrame = dataFrame.groupby(['author_gender']).mean(
                 numeric_only=True).reset_index()
@@ -98,10 +102,10 @@ def plot_course_with_ratings(data, compare_mode):
                              "author_gender": "Male vs. Female",
                              "overall_rating": "Average Ratings",
                          },
-                         title="course_name"+" Course Rating: based on age at " + "uni_name")
+                         title=course_name+" Course Rating: based on age at " + uni_name)
 
         # Compare based on Current Semester:
-        elif compare_mode == 3:
+        elif compare_mode == "3":
 
             dataFrame = dataFrame.groupby(['author_current_semester']).mean(
                 numeric_only=True).reset_index()
@@ -111,7 +115,7 @@ def plot_course_with_ratings(data, compare_mode):
                              "author_current_semester": "Current Semester",
                              "overall_rating": "Average Ratings",
                          },
-                         title="course_name"+" Course Rating: based on age at " + "uni_name")
+                         title=course_name+" Course Rating: based on age at " + uni_name)
 
         graphJSON = plotly.io.to_json(fig, pretty=True)
         return graphJSON
