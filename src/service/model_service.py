@@ -65,11 +65,8 @@ def get_all_ratings_by_params(params):  # course_id, rating_gender
 def get_uni_by_params(params):
     id = params.get("uni_id")
     print(id)
-
     uni = Uni.query.filter(Uni.id == id).all()
-
     unires = [d.__dict__ for d in uni]
-
     return unires[0]
 
 
