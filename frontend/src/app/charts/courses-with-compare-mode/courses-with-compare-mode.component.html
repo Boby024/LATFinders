@@ -1,0 +1,49 @@
+<div class="d-flex flex-md-row gap-5 container">
+    <div>
+        <mat-form-field appearance="outline">
+            <mat-label>Select an Uni</mat-label>
+            <mat-select [(value)]="uni" (selectionChange)="setUni($event)">
+                <mat-option *ngFor="let uni of unis" [value]="uni">
+                    {{uni.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="outline">
+            <mat-label>Select a Course from the Uni</mat-label>
+            <mat-select [(value)]="course" [disabled]="!is_uni_selected" (selectionChange)="setCourse($event)">
+                <mat-option *ngFor="let course of courses" [value]="course">
+                    {{course.course_name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="outline">
+            <mat-label>Select the compare mode</mat-label>
+            <mat-select [(value)]="compareMode" [disabled]="!is_course_selected"
+                (selectionChange)="setCompareMode($event)">
+                <mat-option value=1>
+                    Age
+                </mat-option>
+                <mat-option [value]=2>
+                    Gender
+                </mat-option>
+                <mat-option [value]=3>
+                    Current Semester
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+
+<div>
+    <div>
+        <plotly-plot *ngIf="plot" [data]="plot.data" [layout]="plot.layout"></plotly-plot>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <button mat-raised-button color="primary">Get a more detailed analysis</button>
+    </div>
+</div>

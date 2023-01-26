@@ -39,4 +39,7 @@ export class MainService {
   getNumberOfRatingsPlotted(uni_id: number): Observable<any>{
     return this.http.get<any>(`${this.main}/unis/plot_number_of_ratings_by_uni_id?uni_id=${uni_id}`)
   }
+  getCourseRatingsPlotted(course_id: number,compare_mode:number): Observable<any>{
+    return this.http.get<any>(`${this.main}/course/plot_course_ratings_with_compare_mode?course_id=${course_id}&compare_mode=${compare_mode}`)
+  }
 }

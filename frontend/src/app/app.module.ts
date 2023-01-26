@@ -24,11 +24,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { UniversityComponent } from './university/university.component';
 import { UniNumberOfRatingsComponent } from './charts/uni-number-of-ratings/uni-number-of-ratings.component';
+import { CoursesPageComponent } from './courses-page/courses-page.component';
+import { CoursesWithCompareModeComponent } from './charts/courses-with-compare-mode/courses-with-compare-mode.component';
 
 PlotlyModule.plotlyjs = PlotlyJS;
 const routes: Routes = [
   { path: '', component: UniversityComponent },
   { path: 'login', component: LoginComponent },
+  { path:'course', component: CoursesPageComponent}
 ];
 
 @NgModule({
@@ -40,6 +43,8 @@ const routes: Routes = [
     NavigationbarComponent,
     UniversityComponent,
     UniNumberOfRatingsComponent,
+    CoursesPageComponent,
+    CoursesWithCompareModeComponent,
   ],
   imports: [
     BrowserModule,
