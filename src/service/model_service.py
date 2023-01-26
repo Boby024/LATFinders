@@ -73,6 +73,30 @@ def get_uni_by_params(params):
     return unires[0]
 
 
+def get_course_and_ratings(course_id):
+    sqlResult = db.engine.execute(text(
+        '''
+        SELECT u.name,c.course_name, r.course_contents_rating, r.docents_rating,
+                     r.lectures_rating, r.organization_rating, r.library_rating,
+                     r.digitization_rating, r.overall_rating,
+                     r.author_age ,r.author_gender, r.author_current_semester
+                     FROM araschema.ratings r
+                     JOIN araschema.courses c
+                     ON c.id = r.course_id
+					 JOIN araschema.unis u
+					 ON u.id=c.uni_id
+                     WHERE c.id =:course_id
+                     AND (r.author_gender ='F' OR r.author_gender ='M')
+                     AND r.author_age !='keine Angabe'
+                     ORDER BY r.author_age ASC ;
+        '''),
+        {'course_id': course_id}
+    )
+    course_and_ratings = [dict(d.items()) for d in sqlResult]
+
+    return course_and_ratings
+
+
 def filter_unis(params):  # request.args
     query = params.get("query")
 

@@ -71,6 +71,56 @@ def plot_number_of_ratings_by_uni_id(data, uni_name):
         print("Degree Type is not available :) ")
 
 
+def plot_course_with_ratings(data, compare_mode):
+    dataFrame = pd.DataFrame(data)
+    fig = {}
+    if dataFrame.size != 0:
+        # Compare based on Age:
+        if compare_mode == 1:
+            dataFrame = dataFrame.groupby(['author_age']).mean(
+                numeric_only=True).reset_index()
+            fig = px.bar(dataFrame, x="author_age", y="overall_rating",
+                         color="author_age",
+                         labels={
+                             "author_age": "Age Range",
+                             "overall_rating": "Average Ratings",
+                         },
+                         title="course_name"+" Course Rating: based on age at " + "uni_name")
+
+        # Compare based on Gender:
+        elif compare_mode == 2:
+
+            dataFrame = dataFrame.groupby(['author_gender']).mean(
+                numeric_only=True).reset_index()
+            fig = px.bar(dataFrame, x="author_gender", y="overall_rating",
+                         color="author_gender",
+                         labels={
+                             "author_gender": "Male vs. Female",
+                             "overall_rating": "Average Ratings",
+                         },
+                         title="course_name"+" Course Rating: based on age at " + "uni_name")
+
+        # Compare based on Current Semester:
+        elif compare_mode == 3:
+
+            dataFrame = dataFrame.groupby(['author_current_semester']).mean(
+                numeric_only=True).reset_index()
+            fig = px.bar(dataFrame, x="author_current_semester", y="overall_rating",
+                         color="author_current_semester",
+                         labels={
+                             "author_current_semester": "Current Semester",
+                             "overall_rating": "Average Ratings",
+                         },
+                         title="course_name"+" Course Rating: based on age at " + "uni_name")
+
+        graphJSON = plotly.io.to_json(fig, pretty=True)
+        return graphJSON
+    else:
+        print("Wrong uni_id or course_id :) ")
+
+#TODO: delete or edit
+
+
 def plot_uni_number_of_ratings_by_all_course_types(uni_id, course_id, dataFrame, compare_mode):
     if df.size != 0:
         # Pie Chart
