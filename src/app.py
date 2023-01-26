@@ -56,6 +56,16 @@ def plot_number_of_ratings_by_uni_id():
         request.args)
     return response.setRep(plot_service.plot_number_of_ratings_by_uni_id(courses_with_count, uni['name']), "f")
 
+
+@app.route("/course/plot_course_ratings_with_compare_mode")
+def plot_course_ratings_with_compare_mode():
+    course_id = request.args.get('course_id')
+    compare_mode = request.args.get('compare_mode')
+    courses_with_ratings = model_service.get_course_and_ratings(
+        course_id)
+
+    return response.setRep(plot_service.plot_course_with_ratings(courses_with_ratings, compare_mode), "f")
+
 # @app.route('/ratings', methods=['GET'])
 # def get_ratings():
 #     return jsonify(model_service.get_all_ratings())
