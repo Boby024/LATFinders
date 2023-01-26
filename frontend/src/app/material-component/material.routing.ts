@@ -16,6 +16,10 @@ import { TooltipComponent } from './tooltip/tooltip.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SliderComponent } from './slider/slider.component';
 import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
+import { NewTestCompComponent } from './ara-module/new-test-comp/new-test-comp.component';
+import { HomeComponent } from './ara-module/home/home.component';
+import { CoursesPageComponent } from './ara-module/courses-page/courses-page.component';
+import { UniversityComponent } from './ara-module/university/university.component';
 
 export const MaterialRoutes: Routes = [
   {
@@ -81,5 +85,19 @@ export const MaterialRoutes: Routes = [
   {
     path: 'slide-toggle',
     component: SlideToggleComponent
+  },
+
+  //ARA
+  {
+    path: 'university',
+    component: UniversityComponent
+  },
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'course',
+    component: CoursesPageComponent
   }
 ];

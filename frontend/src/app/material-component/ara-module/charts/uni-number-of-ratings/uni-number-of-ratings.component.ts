@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Course, Uni } from 'src/app/model/main';
-import { MainService } from 'src/app/service/main.service';
+import { Uni } from '../../model/main';
+import { MainService } from '../../service/main.service';
 
 @Component({
   selector: 'app-uni-number-of-ratings',

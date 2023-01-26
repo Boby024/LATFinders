@@ -1,8 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MainService} from "../service/main.service";
-import {AnalyticQuery, Course, SearchQuery, Uni} from "../model/main";
-import { PlotlyBundleName } from 'angular-plotly.js';
-
+import {Course, Uni} from "../model/main";
 @Component({
   selector: 'app-analytic',
   templateUrl: './analytic.component.html',
