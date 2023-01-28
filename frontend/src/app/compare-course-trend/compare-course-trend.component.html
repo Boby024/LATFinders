@@ -61,12 +61,20 @@
             <mat-radio-button value="2">Future</mat-radio-button>
           </mat-radio-group>
         </div>
+
+        <div class="mt-2">
+          <mat-form-field appearance="outline">
+            <mat-label>Date (YYYY-MM-DD)</mat-label>
+            <input type="text" matInput formControlName="date">
+          </mat-form-field>
+        </div>
       </div>
 
       <div class="mt-auto mb-auto">
         <button
           mat-raised-button
           color="primary"
+          [disabled]="!compareInfo.valid"
           (click)="compare()"
         >
           compare
@@ -76,6 +84,18 @@
   </form>
 </div>
 
-<div [hidden]="trendPlotted === undefined">
-  <plotly-plot [data]="trendPlotted?.data" [layout]="trendPlotted?.layout"></plotly-plot>
+<div class="d-flex justify-content-center mt-5" *ngIf="startSearching">
+  <mat-spinner></mat-spinner>
 </div>
+<div class="d-flex justify-content-center mt-5" style="color: red" *ngIf="showErrorMessage">
+  <div class="d-flex flex-md-column text-center">
+    <div>NOT ENOUGH RATING FROM ONE/TWO OF THE UNI(S) YOU SELECTED</div>
+    <div>PLEASE SELECT ANOTHER COURSE</div>
+  </div>
+</div>
+<div *ngIf="trendPlotted">
+  <!--<plotly-plot [data]="trendPlotted?.data" [layout]="trendPlotted?.layout"></plotly-plot>-->
+  <plotly-plot [data]="trendPlotted?.graphJSON1?.data" [layout]="trendPlotted?.graphJSON1?.layout"></plotly-plot>
+  <plotly-plot [data]="trendPlotted?.graphJSON2?.data" [layout]="trendPlotted?.graphJSON2?.layout"></plotly-plot>
+</div>
+

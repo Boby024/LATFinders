@@ -14,6 +14,8 @@ export class CompareCourseTrendComponent implements OnInit {
   unis2: Uni[] = [];
   courses2: Course[] = [];
   public trendPlotted: any = undefined;
+  startSearching = false;
+  showErrorMessage = false;
 
   public compareInfo =  this.fb.group({
     uni_id1: [null, Validators.required],
@@ -65,9 +67,18 @@ export class CompareCourseTrendComponent implements OnInit {
   }
 
   compare() {
-    console.warn(this.compareInfo.value);
-    this.mainService.getCompareCourseTrend(this.compareInfo.value).subscribe((data) => {
+    this.startSearching = true;
+    this.showErrorMessage = false;
+    this.trendPlotted = undefined;
+    this.mainService.getCompareCourseTrend(this.compareInfo.value).subscribe(
+      (data) => {
       this.trendPlotted = data;
-    });
+      },
+      (error) => {
+        this.showErrorMessage = true;
+      }
+    );
+
+    this.startSearching = false;
   }
 }

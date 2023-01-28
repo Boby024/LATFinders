@@ -21,6 +21,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { CompareCourseTrendComponent } from './compare-course-trend/compare-course-trend.component';
 import {MatRadioModule} from "@angular/material/radio";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 
 PlotlyModule.plotlyjs = PlotlyJS;
 const routes: Routes = [
@@ -53,7 +54,8 @@ const routes: Routes = [
     MatSidenavModule,
     MatIconModule,
     MatToolbarModule,
-    MatRadioModule
+    MatRadioModule,
+    MatProgressSpinnerModule
   ],
   exports: [RouterModule],
   providers: [],

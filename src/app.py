@@ -21,6 +21,10 @@ def test():
 def get_unis():
     return response.setRep(model_service.get_all_unis(), "f")
 
+@app.route('/unis2', methods=['GET'])
+def get_uni_courses_with_ratings_over_n():
+    return response.setRep(model_service.get_uni_courses_with_ratings_over_n(), "f")
+
 @app.route('/courses', methods=['GET'])
 def get_courses():
     return response.setRep(model_service.get_all_courses(), "f")
@@ -49,9 +53,10 @@ def compare_course_trend():
     print(request_data)
     
     sql_result = model_service.get_rating_by_uniId_courseId_date(request_data)
-    return response.setRep(plot_service.plot_trend_from_two_unis(sql_result), "f")
+    # return response.setRep(plot_service.plot_trend_from_two_unis(sql_result), "f")
+    return jsonify(plot_service.plot_trend_from_two_unis(sql_result))
     
-    # return {"status": True}
+
 
 
 

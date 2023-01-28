@@ -82,6 +82,11 @@ def filter_courses(params): # request.args
     return courses
 
 
+def get_uni_courses_with_ratings_over_n():
+    unis = db.session.query(Uni).join(Course, Course.uni_id==Uni.id).join(Rating, Rating.course_id==Course.id).all()
+    unis = [d.serialize() for d in unis]
+    return unis
+
 
 def get_rating_by_uniId_courseId_date(params):
     uni_id1 = params['uni_id1']
@@ -119,8 +124,6 @@ def get_rating_by_uniId_courseId_date(params):
                     AND date > '{date}' 
                     ORDER BY date ASC ;"""
     data2 = db.session.execute(query2).fetchall()
-
-    print(len(data1), len(data2))
 
     return {
         "query1": {
