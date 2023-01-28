@@ -53,9 +53,7 @@ def compare_course_trend():
     print(request_data)
     
     sql_result = model_service.get_rating_by_uniId_courseId_date(request_data)
-    # return response.setRep(plot_service.plot_trend_from_two_unis(sql_result), "f")
-    return jsonify(plot_service.plot_trend_from_two_unis(sql_result))
-    
+    return response.setRep(plot_service.plot_trend_from_two_unis(sql_result), "f")
 
 
 

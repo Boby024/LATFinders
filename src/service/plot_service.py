@@ -71,8 +71,9 @@ def plot_trend_from_two_unis(result):
     # fig.show()
 
     graphJSON = plotly.io.to_json(fig, pretty=True)
+    graphJSON2 = plot_detailed_trends(result, df1, df2)
 
-    return graphJSON
+    return {"graph1": json.loads(graphJSON), "graph2": json.loads(graphJSON2)}
 
 
 # drawing two detailed courses trends:
