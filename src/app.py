@@ -43,6 +43,17 @@ def plot_ratings():
     return response.setRep(plot_service.plot_ratings(ratings), "f")
 
 
+@app.route("/compare-course-trend", methods=['POST'])
+def compare_course_trend():
+    request_data = request.get_json()
+    print(request_data)
+    
+    sql_result = model_service.get_rating_by_uniId_courseId_date(request_data)
+    return response.setRep(plot_service.plot_trend_from_two_unis(sql_result), "f")
+    
+    # return {"status": True}
+
+
 
 
 # @app.route('/ratings', methods=['GET'])

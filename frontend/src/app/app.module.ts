@@ -16,11 +16,17 @@ import {MatListModule} from "@angular/material/list";
 import { AnalyticComponent } from './analytic/analytic.component';
 import {MatSelectModule} from "@angular/material/select";
 import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatIconModule} from "@angular/material/icon";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import { CompareCourseTrendComponent } from './compare-course-trend/compare-course-trend.component';
+import {MatRadioModule} from "@angular/material/radio";
 
 PlotlyModule.plotlyjs = PlotlyJS;
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'compare-course-trend', component: CompareCourseTrendComponent}
 ];
 
 @NgModule({
@@ -29,6 +35,7 @@ const routes: Routes = [
     HomeComponent,
     LoginComponent,
     AnalyticComponent,
+    CompareCourseTrendComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +49,11 @@ const routes: Routes = [
     MatInputModule,
     MatListModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatRadioModule
   ],
   exports: [RouterModule],
   providers: [],

@@ -1,0 +1,81 @@
+<div class="container">
+  <form [formGroup]="compareInfo">
+    <div class="d-flex flex-md-row gap-5">
+      <div>
+        <div class="d-flex flex-md-row gap-5 mt-3">
+          <div>
+            <mat-form-field appearance="outline" style="width: 300px">
+              <mat-label>Select the first Uni</mat-label>
+              <mat-select formControlName="uni_id1">
+                <mat-option *ngFor="let uni of unis1" [value]="uni.id">
+                  {{uni.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" style="width: 300px">
+              <mat-label>Select an Course from this Uni</mat-label>
+              <mat-select formControlName="course_id1">
+                <mat-option *ngFor="let course of courses1" [value]="course.id">
+                  {{course.course_name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="d-flex flex-md-row gap-5 mt-1">
+          <div>
+            <mat-form-field appearance="outline" style="width: 300px">
+              <mat-label>Select the second Uni</mat-label>
+              <mat-select formControlName="uni_id2">
+                <mat-option *ngFor="let uni of unis2" [value]="uni.id">
+                  {{uni.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" style="width: 300px">
+              <mat-label>Select an Course from this Uni</mat-label>
+              <mat-select formControlName="course_id2">
+                <mat-option *ngFor="let course of courses2" [value]="course.id">
+                  {{course.course_name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-md-column gap-1 mt-auto mb-auto">
+        <div><label id="example-radio-group-label">Compare Mode</label></div>
+        <div>
+          <mat-radio-group
+            aria-label="compare-mode"
+            class="d-flex flex-md-column gap-2"
+            formControlName="type"
+          >
+            <mat-radio-button value="1">Current</mat-radio-button>
+            <mat-radio-button value="2">Future</mat-radio-button>
+          </mat-radio-group>
+        </div>
+      </div>
+
+      <div class="mt-auto mb-auto">
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="compare()"
+        >
+          compare
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div [hidden]="trendPlotted === undefined">
+  <plotly-plot [data]="trendPlotted?.data" [layout]="trendPlotted?.layout"></plotly-plot>
+</div>
