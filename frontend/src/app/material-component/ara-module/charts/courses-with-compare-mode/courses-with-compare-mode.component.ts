@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Course, Uni } from '../../model/main';
 import { MainService } from '../../service/main.service';
 
@@ -16,6 +16,7 @@ export class CoursesWithCompareModeComponent implements OnInit {
   public plot?: Plotly.PlotlyDataLayoutConfig;
   compareMode: number = 1;
   is_course_selected = false;
+  @Output() showMoreDetail = new EventEmitter<Course | undefined>();
 
   constructor(private mainService: MainService) { }
 

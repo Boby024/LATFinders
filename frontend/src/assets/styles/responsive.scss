@@ -10,7 +10,7 @@ File: scss
 
 @media (min-width: 1650px) {
   .main-container.boxed {
-    max-width: 1920px;
+    //max-width: 1920px;
     margin: 0 auto;
   }
 }
@@ -64,7 +64,7 @@ File: scss
 
 @media (min-width: 768px) {
   .navbar-header {
-    width: 225px;
+    width: 195px;
     flex-shrink: 0;
     .navbar-brand {
       padding-top: 0px;

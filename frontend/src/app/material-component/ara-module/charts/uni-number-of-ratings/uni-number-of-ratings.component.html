@@ -1,7 +1,7 @@
 <div class="d-flex flex-md-row gap-5 container">
     <div>
         <mat-form-field appearance="outline">
-            <mat-label>Select an Uni</mat-label>
+            <mat-label>Select a Uni</mat-label>
             <mat-select [(value)]="uni" (selectionChange)="setUni($event)">
                 <mat-option *ngFor="let uni of unis" [value]="uni">
                     {{uni.name}}
@@ -16,7 +16,7 @@
         <plotly-plot *ngIf="uniCoursesPlot" [data]="uniCoursesPlot.data" [layout]="uniCoursesPlot.layout"></plotly-plot>
     </div>
 
-    <div class="d-flex justify-content-center">
+    <div style="text-align: center;">
         <button mat-raised-button color="primary">Get a more detailed analysis</button>
     </div>
 </div>

@@ -21,6 +21,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { UniversityComponent } from './university/university.component';
+import { MatCardModule } from '@angular/material/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { CoursesDetailedComponent } from './charts/courses-detailed/courses-detailed.component';
 
 PlotlyModule.plotlyjs = PlotlyJS;
 
@@ -33,7 +36,8 @@ PlotlyModule.plotlyjs = PlotlyJS;
     UniversityComponent,
     UniNumberOfRatingsComponent,
     CoursesPageComponent,
-    CoursesWithCompareModeComponent
+    CoursesWithCompareModeComponent,
+    CoursesDetailedComponent
   ],
   imports: [
     CommonModule,
@@ -48,7 +52,9 @@ PlotlyModule.plotlyjs = PlotlyJS;
     LayoutModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    FlexLayoutModule
   ],
   exports: [
     NewTestCompComponent
