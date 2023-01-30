@@ -50,12 +50,19 @@
     <div *ngIf="plot" fxFlex.gt-lg="70" fxFlex.gt-md="70" fxFlex.gt-xs="100" fxFlex="100">
         <mat-card text-center>
             <mat-card-content>
+                <mat-card-title>
+                    Ratings count
+                </mat-card-title>
+                <mat-card-subtitle>
+                    Ratings of course {{course.course_name}}
+                </mat-card-subtitle>
                 <div>
                     <plotly-plot [data]="plot.data" [layout]="plot.layout"></plotly-plot>
                 </div>
 
                 <mat-card-actions style="text-align:center">
-                    <button mat-raised-button color="primary">Get a more detailed analysis</button>
+                    <button (click)="onShowMoreDetailPressed()" mat-raised-button color="primary">Get a more detailed
+                        analysis</button>
                 </mat-card-actions>
             </mat-card-content>
         </mat-card>

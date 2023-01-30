@@ -1,6 +1,4 @@
-<app-courses-with-compare-mode></app-courses-with-compare-mode>
+<app-courses-with-compare-mode (showMoreDetail)="log($event)"></app-courses-with-compare-mode>
 
-<div fxLayout="row wrap">
-    <div fxFlex.gt-lg="35" fxFlex.gt-md="35" fxFlex.gt-xs="100" fxFlex="100">
-    </div>
-</div>
+<app-courses-detailed *ngIf="detailedCourse" [course]="detailedCourse"
+    [compareMode]="compareMode"></app-courses-detailed>

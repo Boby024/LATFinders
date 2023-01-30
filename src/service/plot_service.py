@@ -79,8 +79,6 @@ def plot_course_with_ratings(data, compare_mode):
         course_name = data[0]['course_name']
         # Compare based on Age:
         if compare_mode == "1":
-            print("HI")
-            print(compare_mode)
             dataFrame = dataFrame.groupby(['author_age']).mean(
                 numeric_only=True).reset_index()
             fig = px.bar(dataFrame, x="author_age", y="overall_rating",
@@ -121,6 +119,157 @@ def plot_course_with_ratings(data, compare_mode):
         return graphJSON
     else:
         print("Wrong uni_id or course_id :) ")
+
+
+def plot_course_with_ratings_detailed(data, compare_mode):
+    df = pd.DataFrame(data)
+    fig = {}
+    if df.size != 0:
+        # Create subplots
+        fig = make_subplots(rows=2, cols=3, start_cell="top-left")
+        # Compare based on Age:
+        if compare_mode == "1":
+            df = df.groupby(['author_age']).mean(
+                numeric_only=True).reset_index()
+            df1 = df.iloc[:, [0, 1]].copy()
+            df2 = df.iloc[:, [0, 2]].copy()
+            df3 = df.iloc[:, [0, 3]].copy()
+            df4 = df.iloc[:, [0, 4]].copy()
+            df5 = df.iloc[:, [0, 5]].copy()
+            df6 = df.iloc[:, [0, 6]].copy()
+
+            # Set traces for the 1st bar chart
+            fig.add_trace(go.Bar(name="Course's Content Rating",
+                                 x=df1['author_age'],
+                                 y=df1['course_contents_rating']),
+                          row=1, col=1)
+
+            # Traces for the 2nd bar chart
+            fig.add_trace(go.Bar(name="Docents Rating",
+                                 x=df2['author_age'],
+                                 y=df2['docents_rating']),
+                          row=1, col=2)
+
+            # Traces for the 3rd bar chart
+            fig.add_trace(go.Bar(name="Lectures Rating",
+                                 x=df3['author_age'],
+                                 y=df3['lectures_rating']),
+                          row=1, col=3)
+
+            # Traces for the 4th bar chart
+            fig.add_trace(go.Bar(name="Organization Rating",
+                                 x=df4['author_age'],
+                                 y=df4['organization_rating']),
+                          row=2, col=1)
+
+            # Traces for the 5th bar chart
+            fig.add_trace(go.Bar(name="Library Rating",
+                                 x=df5['author_age'],
+                                 y=df5['library_rating']),
+                          row=2, col=2)
+
+            # Traces for the 6th bar chart
+            fig.add_trace(go.Bar(name="Digitization Rating",
+                                 x=df6['author_age'],
+                                 y=df6['digitization_rating']),
+                          row=2, col=3)
+
+        # Compare based on Gender:
+        elif compare_mode == "2":
+            df = df.groupby(['author_gender']).mean(
+                numeric_only=True).reset_index()
+            df1 = df.iloc[:, [0, 1]].copy()
+            df2 = df.iloc[:, [0, 2]].copy()
+            df3 = df.iloc[:, [0, 3]].copy()
+            df4 = df.iloc[:, [0, 4]].copy()
+            df5 = df.iloc[:, [0, 5]].copy()
+            df6 = df.iloc[:, [0, 6]].copy()
+
+            # Set traces for the 1st bar chart
+            fig.add_trace(go.Bar(name="Course's Content Rating",
+                                 x=df1['author_gender'],
+                                 y=df1['course_contents_rating']),
+                          row=1, col=1)
+
+            # Traces for the 2nd bar chart
+            fig.add_trace(go.Bar(name="Docents Rating",
+                                 x=df2['author_gender'],
+                                 y=df2['docents_rating']),
+                          row=1, col=2)
+
+            # Traces for the 3rd bar chart
+            fig.add_trace(go.Bar(name="Lectures Rating",
+                                 x=df3['author_gender'],
+                                 y=df3['lectures_rating']),
+                          row=1, col=3)
+
+            # Traces for the 4th bar chart
+            fig.add_trace(go.Bar(name="Organization Rating",
+                                 x=df4['author_gender'],
+                                 y=df4['organization_rating']),
+                          row=2, col=1)
+
+            # Traces for the 5th bar chart
+            fig.add_trace(go.Bar(name="Library Rating",
+                                 x=df5['author_gender'],
+                                 y=df5['library_rating']),
+                          row=2, col=2)
+
+            # Traces for the 6th bar chart
+            fig.add_trace(go.Bar(name="Digitization Rating",
+                                 x=df6['author_gender'],
+                                 y=df6['digitization_rating']),
+                          row=2, col=3)
+
+        # Compare based on Current Semester:
+        elif compare_mode == "3":
+            df = df.groupby(['author_current_semester']).mean(
+                numeric_only=True).reset_index()
+            df1 = df.iloc[:, [0, 1]].copy()
+            df2 = df.iloc[:, [0, 2]].copy()
+            df3 = df.iloc[:, [0, 3]].copy()
+            df4 = df.iloc[:, [0, 4]].copy()
+            df5 = df.iloc[:, [0, 5]].copy()
+            df6 = df.iloc[:, [0, 6]].copy()
+
+            # Set traces for the 1st bar chart
+            fig.add_trace(go.Bar(name="Course's Content Rating",
+                                 x=df1['author_current_semester'],
+                                 y=df1['course_contents_rating']),
+                          row=1, col=1)
+
+            # Traces for the 2nd bar chart
+            fig.add_trace(go.Bar(name="Docents Rating",
+                                 x=df2['author_current_semester'],
+                                 y=df2['docents_rating']),
+                          row=1, col=2)
+
+            # Traces for the 3rd bar chart
+            fig.add_trace(go.Bar(name="Lectures Rating",
+                                 x=df3['author_current_semester'],
+                                 y=df3['lectures_rating']),
+                          row=1, col=3)
+
+            # Traces for the 4th bar chart
+            fig.add_trace(go.Bar(name="Organization Rating",
+                                 x=df4['author_current_semester'],
+                                 y=df4['organization_rating']),
+                          row=2, col=1)
+
+            # Traces for the 5th bar chart
+            fig.add_trace(go.Bar(name="Library Rating",
+                                 x=df5['author_current_semester'],
+                                 y=df5['library_rating']),
+                          row=2, col=2)
+
+            # Traces for the 6th bar chart
+            fig.add_trace(go.Bar(name="Digitization Rating",
+                                 x=df6['author_current_semester'],
+                                 y=df6['digitization_rating']),
+                          row=2, col=3)
+        print(fig)
+        graphJSON = plotly.io.to_json(fig, pretty=True)
+        return graphJSON
 
 #TODO: delete or edit
 

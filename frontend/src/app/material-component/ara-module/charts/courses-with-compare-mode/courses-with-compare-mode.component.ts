@@ -16,7 +16,7 @@ export class CoursesWithCompareModeComponent implements OnInit {
   public plot?: Plotly.PlotlyDataLayoutConfig;
   compareMode: number = 1;
   is_course_selected = false;
-  @Output() showMoreDetail = new EventEmitter<Course | undefined>();
+  @Output() showMoreDetail = new EventEmitter < { course: Course | undefined, compareMode:number} >();
 
   constructor(private mainService: MainService) { }
 
@@ -61,5 +61,8 @@ export class CoursesWithCompareModeComponent implements OnInit {
   }
   setLayoutConfig() {
     //this.plot!.layout!.width = 600;
+  }
+  onShowMoreDetailPressed() {
+    this.showMoreDetail.emit({course: this.course,compareMode:this.compareMode });
   }
 }
