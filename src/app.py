@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from flask import render_template, redirect
 from service import plot_service
 from utils import response
-
+from service import ml_model
 
 load_dotenv()
 PORT = int(os.environ.get('PORT', 5000))
@@ -21,6 +21,11 @@ def test():
 @app.route('/unis', methods=['GET'])
 def get_unis():
     return response.setRep(model_service.get_all_unis(), "f")
+
+
+@app.route('/unis2', methods=['GET'])
+def get_uni_courses_with_ratings_over_n():
+    return response.setRep(model_service.get_uni_courses_with_ratings_over_n(), "f")
 
 
 @app.route('/courses', methods=['GET'])
@@ -66,6 +71,39 @@ def plot_course_ratings_with_compare_mode():
 
     return response.setRep(plot_service.plot_course_with_ratings(courses_with_ratings, compare_mode), "f")
 
+
+@app.route("/course/plot_course_ratings_detailed_mode")
+def plot_course_ratings_detailed_mode():
+    course_id = request.args.get('course_id')
+    compare_mode = request.args.get('compare_mode')
+    courses_with_ratings = model_service.get_course_and_ratings(
+        course_id)
+
+    return response.setRep(plot_service.plot_course_with_ratings_detailed(courses_with_ratings, compare_mode), "f")
+
+
+@app.route("/compare-course-default", methods=['POST'])
+def compare_course_trend():
+    request_data = request.get_json()
+    sql_result = model_service.compare_unis_default(request_data)
+    return response.setRep(plot_service.compare_default_trend_from_two_unis(sql_result), "f")
+
+
+@app.route("/compare-course-mode", methods=['POST'])
+def compare_course_mode():
+    request_data = request.get_json()
+
+    sql_result = model_service.compare_unis_with_mode(request_data)
+    return response.setRep(plot_service.compare_courses_with_mode(sql_result), "f")
+
+
+@app.route("/course-prediction", methods=['POST'])
+def course_prediction():
+    request_data = request.get_json()
+
+    sql_result = model_service.get_unis_courses_for_ml(request_data)
+    return response.setRep(ml_model.final(sql_result), "f")
+
 # @app.route('/ratings', methods=['GET'])
 # def get_ratings():
 #     return jsonify(model_service.get_all_ratings())
@@ -92,7 +130,6 @@ def plot_course_ratings_with_compare_mode():
 #         username = request.form['username']
 #         password = request.form['password']
 #         print(f"username -> {username} and password -> {password}")
-
 #         courses = model_service.get_all_courses()
 #         return render_template("comparison.html", course=courses)
 if __name__ == '__main__':
