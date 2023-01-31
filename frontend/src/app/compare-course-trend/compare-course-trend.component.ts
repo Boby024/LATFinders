@@ -14,6 +14,7 @@ export class CompareCourseTrendComponent implements OnInit {
   unis2: Uni[] = [];
   courses2: Course[] = [];
   public trendPlotted: any = undefined;
+  public trendPlottedDetailed: any = undefined;
   startSearching = false;
   showErrorMessage = false;
 
@@ -22,10 +23,10 @@ export class CompareCourseTrendComponent implements OnInit {
     course_id1: [null, Validators.required],
     uni_id2: [null, Validators.required],
     course_id2: [null, Validators.required],
-    type: ['1'],
-    date: ['2016-12-31']
+    // type: ['1'],
+    date: ['2016-12-31'],
+    mode: [null]
   });
-
 
   constructor(
     private mainService: MainService,
@@ -66,11 +67,11 @@ export class CompareCourseTrendComponent implements OnInit {
     });
   }
 
-  compare() {
+  compareDefault() {
     this.startSearching = true;
     this.showErrorMessage = false;
     this.trendPlotted = undefined;
-    this.mainService.getCompareCourseTrend(this.compareInfo.value).subscribe(
+    this.mainService.getCompareCourseDefault(this.compareInfo.value).subscribe(
       (data) => {
       this.trendPlotted = data;
       },
@@ -80,5 +81,16 @@ export class CompareCourseTrendComponent implements OnInit {
     );
 
     this.startSearching = false;
+  }
+
+  compareWithMode() {
+    this.mainService.getCompareCourseMode(this.compareInfo.value).subscribe(
+      (data) => {
+        this.trendPlottedDetailed = data;
+      },
+      (error) => {
+        // this.showErrorMessage = true;
+      }
+    );
   }
 }

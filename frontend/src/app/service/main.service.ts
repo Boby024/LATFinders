@@ -26,8 +26,16 @@ export class MainService {
     return this.http.get<Course[]>(`${this.main}/courses_by_uni_id?uni_id=${uniID}`)
   }
 
-  getCompareCourseTrend(data : any): Observable<any> {
-    return this.http.post<any>(`${this.main}/compare-course-trend`, data, this.httpOptions);
+  getCompareCourseDefault(data : any): Observable<any> {
+    return this.http.post<any>(`${this.main}/compare-course-default`, data, this.httpOptions);
+  }
+
+  getCompareCourseMode(data : any): Observable<any> {
+    return this.http.post<any>(`${this.main}/compare-course-mode`, data, this.httpOptions);
+  }
+
+  getCoursePrediction(data : any): Observable<any> {
+    return this.http.post<any>(`${this.main}/course-prediction`, data, this.httpOptions);
   }
 
   filterUnis(s: SearchQuery):Observable<Uni[]>{

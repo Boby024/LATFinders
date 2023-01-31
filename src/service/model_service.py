@@ -88,13 +88,13 @@ def get_uni_courses_with_ratings_over_n():
     return unis
 
 
-def get_rating_by_uniId_courseId_date(params):
+def compare_unis_default(params):
     uni_id1 = params['uni_id1']
     course_id1 = params['course_id1']
     uni_id2 = params['uni_id2']
     course_id2 = params['course_id2']
     date = params['date']
-    type = params['type']
+    # type = params['type']
 
     # if date is None:
     #     date = '2016-12-31'
@@ -139,5 +139,84 @@ def get_rating_by_uniId_courseId_date(params):
             "course_id": course_id2,
             "course_name": get_course_by_id(course_id2).course_name,
             "data": data2
+        }
+    }
+
+
+def compare_unis_with_mode(params):
+    uni_id1 = params['uni_id1']
+    course_id1 = params['course_id1']
+    uni_id2 = params['uni_id2']
+    course_id2 = params['course_id2']
+    # date = params['date']
+    mode = params['mode'] # 1=age, 2=gender, 3=semester
+
+    query1 = f"""SELECT r.course_contents_rating, r.docents_rating,
+                    r.lectures_rating, r.organization_rating, r.library_rating,
+                    r.digitization_rating, r.overall_rating,
+                    r.author_age ,r.author_gender, r.author_current_semester
+                    FROM araschema.ratings r 
+                    JOIN araschema.courses c 
+                    ON c.id = r.course_id 
+                    WHERE c.id = {course_id1} 
+                    AND c.uni_id = {uni_id1}  
+                    AND (r.author_gender ='F' OR r.author_gender ='M') 
+                    AND r.author_age !='keine Angabe'
+                    ORDER BY r.author_age ASC ;"""
+    data1 = db.session.execute(query1).fetchall()
+
+    query2 = f"""SELECT r.course_contents_rating, r.docents_rating,
+                    r.lectures_rating, r.organization_rating, r.library_rating,
+                    r.digitization_rating, r.overall_rating,
+                    r.author_age ,r.author_gender, r.author_current_semester
+                    FROM araschema.ratings r 
+                    JOIN araschema.courses c 
+                    ON c.id = r.course_id 
+                    WHERE c.id = {course_id2} 
+                    AND c.uni_id = {uni_id2}  
+                    AND (r.author_gender ='F' OR r.author_gender ='M') 
+                    AND r.author_age !='keine Angabe'
+                    ORDER BY r.author_age ASC ;"""
+    data2 = db.session.execute(query2).fetchall()
+
+    return {
+        "query1": {
+            "uni_id": uni_id1,
+            "uni_name": get_uni_by_id(uni_id1).name,
+            "course_id": course_id1,
+            "course_name": get_course_by_id(course_id1).course_name,
+            "data": data1
+        },
+        "query2": {
+            "uni_id": uni_id2,
+            "uni_name": get_uni_by_id(uni_id2).name,
+            "course_id": course_id2,
+            "course_name": get_course_by_id(course_id2).course_name,
+            "data": data2
+        },
+        "mode": mode
+    }
+
+
+def get_unis_courses_for_ml(params):
+    uni_id = params['uni_id']
+    course_id = params['course_id']
+
+    query = f"""SELECT r.date, r.overall_rating 
+                FROM araschema.ratings r 
+                JOIN araschema.courses c 
+                ON c.id = r.course_id 
+                WHERE c.id = {course_id} 
+                AND c.uni_id = {uni_id}  
+                ORDER BY date ASC ;"""
+    data = db.session.execute(query).fetchall()
+
+    return {
+        "query": {
+            "uni_id": uni_id,
+            "uni_name": get_uni_by_id(uni_id).name,
+            "course_id": course_id,
+            "course_name": get_course_by_id(course_id).course_name,
+            "data": data
         }
     }

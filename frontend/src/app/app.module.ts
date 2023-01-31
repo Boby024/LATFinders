@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {PlotlyModule} from "angular-plotly.js";
 import * as PlotlyJS from 'plotly.js-dist-min';
 import {MatFormFieldModule} from "@angular/material/form-field";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {MatListModule} from "@angular/material/list";
 import { AnalyticComponent } from './analytic/analytic.component';
@@ -22,12 +22,14 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import { CompareCourseTrendComponent } from './compare-course-trend/compare-course-trend.component';
 import {MatRadioModule} from "@angular/material/radio";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import { CoursePredictionComponent } from './course-prediction/course-prediction.component';
 
 PlotlyModule.plotlyjs = PlotlyJS;
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'compare-course-trend', component: CompareCourseTrendComponent}
+  { path: 'compare-courses', component: CompareCourseTrendComponent},
+  { path: 'course-prediction', component: CoursePredictionComponent}
 ];
 
 @NgModule({
@@ -37,6 +39,7 @@ const routes: Routes = [
     LoginComponent,
     AnalyticComponent,
     CompareCourseTrendComponent,
+    CoursePredictionComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,7 +58,8 @@ const routes: Routes = [
     MatIconModule,
     MatToolbarModule,
     MatRadioModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    FormsModule
   ],
   exports: [RouterModule],
   providers: [],

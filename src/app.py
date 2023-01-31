@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from flask import render_template, redirect
 from service import plot_service
 from utils import response
+from service import ml_model
 
 
 load_dotenv()
@@ -47,47 +48,29 @@ def plot_ratings():
     return response.setRep(plot_service.plot_ratings(ratings), "f")
 
 
-@app.route("/compare-course-trend", methods=['POST'])
+@app.route("/compare-course-default", methods=['POST'])
 def compare_course_trend():
     request_data = request.get_json()
-    print(request_data)
     
-    sql_result = model_service.get_rating_by_uniId_courseId_date(request_data)
-    return response.setRep(plot_service.plot_trend_from_two_unis(sql_result), "f")
+    sql_result = model_service.compare_unis_default(request_data)
+    return response.setRep(plot_service.compare_default_trend_from_two_unis(sql_result), "f")
 
 
+@app.route("/compare-course-mode", methods=['POST'])
+def compare_course_mode():
+    request_data = request.get_json()
+    
+    sql_result = model_service.compare_unis_with_mode(request_data)
+    return response.setRep(plot_service.compare_courses_with_mode(sql_result), "f")
 
 
+@app.route("/course-prediction", methods=['POST'])
+def course_prediction():
+    request_data = request.get_json()
+    
+    sql_result = model_service.get_unis_courses_for_ml(request_data)
+    return response.setRep(ml_model.final(sql_result), "f")
 
-# @app.route('/ratings', methods=['GET'])
-# def get_ratings():
-#     return jsonify(model_service.get_all_ratings())
-
-
-# @app.route("/rating")
-# def rating_page():
-#     ratings = model_service.get_all_ratings()
-#     return render_template("rating.html", graphJSON=plot_service.rating(ratings))
-
-# @app.route("/login")
-# def login():
-#     return render_template("login.html")
-
-# @app.route("/")
-# def home():
-#     courses = model_service.get_all_courses()
-#     print(courses)
-#     return render_template("main.html", course=courses)
-
-# @app.route('/comparison', methods = ['POST', 'GET'])
-# def comparison():
-#     if request.method == 'POST':
-#         username = request.form['username']
-#         password = request.form['password']
-#         print(f"username -> {username} and password -> {password}")
-        
-#         courses = model_service.get_all_courses()
-#         return render_template("comparison.html", course=courses)
 
 
 if __name__ == '__main__':
