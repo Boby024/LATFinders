@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {environment} from "../../../../environments/environment.prod";
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {AnalyticQuery, Course, SearchQuery, Uni} from "../model/main";
 
@@ -9,6 +9,13 @@ import {AnalyticQuery, Course, SearchQuery, Uni} from "../model/main";
 })
 export class MainService {
   private main = environment.root
+
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type':  'application/json',
+      Authorization: 'my-auth-token'
+    })
+  };
 
   constructor(private http:HttpClient) { }
 
@@ -19,6 +26,19 @@ export class MainService {
   getCoursesByUniID(uniID: number):Observable<Course[]>{
     return this.http.get<Course[]>(`${this.main}/courses_by_uni_id?uni_id=${uniID}`)
   }
+
+  getCompareCourseDefault(data : any): Observable<any> {
+    return this.http.post<any>(`${this.main}/compare-course-default`, data, this.httpOptions);
+  }
+
+  getCompareCourseMode(data : any): Observable<any> {
+    return this.http.post<any>(`${this.main}/compare-course-mode`, data, this.httpOptions);
+  }
+
+  getCoursePrediction(data : any): Observable<any> {
+    return this.http.post<any>(`${this.main}/course-prediction`, data, this.httpOptions);
+  }
+
 
   filterUnis(s: SearchQuery):Observable<Uni[]>{
     return this.http.get<Uni[]>(`${this.main}/filter_unis?query=${s.query}`)
@@ -47,4 +67,5 @@ export class MainService {
   getCourseRatingsDetailedPlotted(course_id: number,compare_mode:number): Observable<any>{
     return this.http.get<any>(`${this.main}/course/plot_course_ratings_detailed_mode?course_id=${course_id}&compare_mode=${compare_mode}`)
   }
+  
 }

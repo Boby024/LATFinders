@@ -10,7 +10,7 @@ import { CoursesWithCompareModeComponent } from './charts/courses-with-compare-m
 import { PlotlyModule } from 'angular-plotly.js';
 import * as PlotlyJS from 'plotly.js-dist-min';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
@@ -24,6 +24,10 @@ import { UniversityComponent } from './university/university.component';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CoursesDetailedComponent } from './charts/courses-detailed/courses-detailed.component';
+import { CompareCourseTrendComponent } from './compare-course-trend/compare-course-trend.component';
+import { CoursePredictionComponent } from './course-prediction/course-prediction.component';
+import {MatRadioModule} from "@angular/material/radio";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 
 PlotlyModule.plotlyjs = PlotlyJS;
 
@@ -37,7 +41,9 @@ PlotlyModule.plotlyjs = PlotlyJS;
     UniNumberOfRatingsComponent,
     CoursesPageComponent,
     CoursesWithCompareModeComponent,
-    CoursesDetailedComponent
+    CoursesDetailedComponent,
+    CompareCourseTrendComponent,
+    CoursePredictionComponent
   ],
   imports: [
     CommonModule,
@@ -54,7 +60,10 @@ PlotlyModule.plotlyjs = PlotlyJS;
     MatSidenavModule,
     MatIconModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatRadioModule,
+    MatProgressSpinnerModule,
+    FormsModule
   ],
   exports: [
     NewTestCompComponent

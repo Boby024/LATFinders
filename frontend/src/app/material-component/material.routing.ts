@@ -20,6 +20,9 @@ import { NewTestCompComponent } from './ara-module/new-test-comp/new-test-comp.c
 import { HomeComponent } from './ara-module/home/home.component';
 import { CoursesPageComponent } from './ara-module/courses-page/courses-page.component';
 import { UniversityComponent } from './ara-module/university/university.component';
+import { Component } from '@angular/core';
+import { CoursePredictionComponent } from './ara-module/course-prediction/course-prediction.component';
+import { CompareCourseTrendComponent } from './ara-module/compare-course-trend/compare-course-trend.component';
 
 export const MaterialRoutes: Routes = [
   {
@@ -99,5 +102,13 @@ export const MaterialRoutes: Routes = [
   {
     path: 'course',
     component: CoursesPageComponent
+  },
+  {
+    path: 'trend-prediction',
+    component: CoursePredictionComponent
+  },
+  {
+    path: 'compare',
+    component: CompareCourseTrendComponent
   }
 ];

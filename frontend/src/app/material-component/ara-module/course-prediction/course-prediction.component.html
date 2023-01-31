@@ -1,0 +1,96 @@
+<div fxLayout="row wrap">
+    <div fxFlex.gt-lg="70" fxFlex.gt-md="70" fxFlex.gt-xs="100" fxFlex="100">
+        <mat-card>
+            <mat-card-content>
+                <mat-card-title>Course selection</mat-card-title>
+                <mat-card-subtitle>Select the university and the course</mat-card-subtitle>
+                <form [formGroup]="predictionInfo" class="d-flex justify-content-center">
+                    <div class="d-flex flex-md-row gap-5">
+                        <div>
+                            <div class="d-flex flex-md-row gap-5 mt-3">
+                                <div>
+                                    <mat-form-field appearance="outline" style="width: 300px">
+                                        <mat-label>Select the first uni</mat-label>
+                                        <mat-select formControlName="uni_id">
+                                            <mat-option *ngFor="let uni of unis" [value]="uni.id">
+                                                {{uni.name}}
+                                            </mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div>
+                                    <mat-form-field appearance="outline" style="width: 300px">
+                                        <mat-label>Select a course from uni</mat-label>
+                                        <mat-select formControlName="course_id">
+                                            <mat-option *ngFor="let course of courses" [value]="course.id">
+                                                {{course.course_name}}
+                                            </mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto mb-auto">
+                            <button style="margin-top:5px; padding: 10px 30px;" mat-raised-button color="primary"
+                                [disabled]="!predictionInfo.valid" (click)="predict()">
+                                Predict
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div *ngIf="predictionPlottedDetail" fxFlex.gt-lg="30" fxFlex.gt-md="30" fxFlex.gt-xs="100" fxFlex="100">
+        <mat-card>
+            <mat-card-content>
+                <mat-card-title>Detailed Info</mat-card-title>
+                <mat-card-subtitle>The calculated trend means</mat-card-subtitle>
+                <div style="display: block; font-size: 20px;">Current Trend Mean: <span>{{
+                        predictionPlottedDetail?.current_trend_mean}}</span></div>
+                <div style="display: block; font-size: 20px;">Future Trend Mean: <span class="fw-bold">{{
+                        predictionPlottedDetail?.future_trend_mean}}</span>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+
+<div class="d-flex justify-content-center mt-5" *ngIf="startSearching">
+    <mat-spinner></mat-spinner>
+</div>
+
+
+<div *ngIf="predictionPlottedDetail">
+    <mat-card>
+        <mat-card-content>
+            <mat-card-title>Explanation</mat-card-title>
+            <mat-card-subtitle>The explanation of our prediction</mat-card-subtitle>
+            <div>
+                <div class="d-flex justify-content-center">
+                    <h2>Preprocessing Steps</h2>
+                </div>
+                <plotly-plot [data]="predictionPlottedDetail?.preprocessing?.graph1?.data"
+                    [layout]="predictionPlottedDetail?.preprocessing?.graph1?.layout">
+                </plotly-plot>
+                <plotly-plot [data]="predictionPlottedDetail?.preprocessing?.graph2?.data"
+                    [layout]="predictionPlottedDetail?.preprocessing?.graph2?.layout">
+                </plotly-plot>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <mat-card>
+        <mat-card-content>
+            <mat-card-title>Future Prediction</mat-card-title>
+            <mat-card-subtitle>How we predict the changes of the ratings in the future</mat-card-subtitle>
+            <div>
+                <plotly-plot [data]="predictionPlottedDetail?.future_trend_fig?.data"
+                    [layout]="predictionPlottedDetail?.future_trend_fig?.layout">
+                </plotly-plot>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+</div>
