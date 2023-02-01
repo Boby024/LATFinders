@@ -338,6 +338,21 @@ def compare_default_trend_from_two_unis(result):
                       xaxis_title='Date',
                       yaxis_title='Overall Ranking')
 
+    fig.update_layout(
+        xaxis=dict(
+            rangeselector=dict(
+                buttons=list([
+                    dict(count=1,
+                         step="month",
+                         stepmode="backward"),
+                ])
+            ),
+            rangeslider=dict(
+                visible=True
+            ),
+        )
+    )
+
     # fig.show()
 
     graphJSON = plotly.io.to_json(fig, pretty=True)

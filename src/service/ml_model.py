@@ -187,6 +187,21 @@ def plot_future_trend(future_df, uni_name, course_name):
 
     fig.update_layout(legend=dict(yanchor="top", y=1, xanchor="left", x=0))
 
+    fig.update_layout(
+        xaxis=dict(
+            rangeselector=dict(
+                buttons=list([
+                    dict(count=1,
+                         step="month",
+                         stepmode="backward"),
+                ])
+            ),
+            rangeslider=dict(
+                visible=True
+            ),
+        )
+    )
+
     # fig.show()
     graphJSON = plotly.io.to_json(fig, pretty=True)
     return json.loads(graphJSON)
