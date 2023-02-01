@@ -66,17 +66,17 @@ def plot_number_of_ratings_by_uni_id(data, uni_name, compare_mode):
             fig = make_subplots(rows=6, cols=1, specs=[[{"type": "bar"}], [{"type": "bar"}], [{"type": "bar"}], [
                                 {"type": "bar"}], [{"type": "bar"}], [{"type": "bar"}]], start_cell="top-left", subplot_titles=("Bachelor of Arts", "Bachelor of Engineering", "Bachelor of Science", "Master of Arts", "Master of Engineering", "Master of Science"))
             fig.add_trace(
-                go.Bar(x=df_BoA['course_name'], y=df_BoA['number_of_ratings'], name="abc"), row=1, col=1)
+                go.Bar(x=df_BoA['course_name'], y=df_BoA['number_of_ratings'], name="Bachelor of Arts"), row=1, col=1)
             fig.add_trace(
-                go.Bar(x=df_BoE['course_name'], y=df_BoE['number_of_ratings']), row=2, col=1)
+                go.Bar(x=df_BoE['course_name'], y=df_BoE['number_of_ratings'], name="Bachelor of Engineering"), row=2, col=1)
             fig.add_trace(
-                go.Bar(x=df_BoS['course_name'], y=df_BoS['number_of_ratings']), row=3, col=1)
+                go.Bar(x=df_BoS['course_name'], y=df_BoS['number_of_ratings'], name="Bachelor of Science"), row=3, col=1)
             fig.add_trace(
-                go.Bar(x=df_MoA['course_name'], y=df_MoA['number_of_ratings']), row=4, col=1)
+                go.Bar(x=df_MoA['course_name'], y=df_MoA['number_of_ratings'], name="Master of Arts"), row=4, col=1)
             fig.add_trace(
-                go.Bar(x=df_MoE['course_name'], y=df_MoE['number_of_ratings']), row=5, col=1)
+                go.Bar(x=df_MoE['course_name'], y=df_MoE['number_of_ratings'], name="Master of Arts"), row=5, col=1)
             fig.add_trace(
-                go.Bar(x=df_MoS['course_name'], y=df_MoS['number_of_ratings']), row=6, col=1)
+                go.Bar(x=df_MoS['course_name'], y=df_MoS['number_of_ratings'], name="Master of Arts"), row=6, col=1)
             fig.update_layout(
                 autosize=True,
                 width=1300,
