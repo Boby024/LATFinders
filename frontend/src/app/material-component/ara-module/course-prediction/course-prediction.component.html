@@ -68,7 +68,7 @@
         <mat-card-content>
             <mat-card-title>Explanation</mat-card-title>
             <mat-card-subtitle>The explanation of our prediction</mat-card-subtitle>
-            <div>
+            <div style="overflow:hidden">
                 <div class="d-flex justify-content-center">
                     <h2>Preprocessing Steps</h2>
                 </div>
@@ -85,7 +85,7 @@
         <mat-card-content>
             <mat-card-title>Future Prediction</mat-card-title>
             <mat-card-subtitle>How we predict the changes of the ratings in the future</mat-card-subtitle>
-            <div>
+            <div style="overflow:hidden">
                 <plotly-plot [data]="predictionPlottedDetail?.future_trend_fig?.data"
                     [layout]="predictionPlottedDetail?.future_trend_fig?.layout">
                 </plotly-plot>

@@ -142,12 +142,12 @@
             <mat-card-title>Compare mode based on of users</mat-card-title>
 
             <div class="d-flex flex-md-row gap-2">
-                <div>
+                <div style="overflow:hidden">
                     <plotly-plot [data]="trendPlottedDetailed?.graph1?.first?.data"
                         [layout]="trendPlottedDetailed?.graph1?.first?.layout">
                     </plotly-plot>
                 </div>
-                <div>
+                <div style="overflow:hidden">
                     <plotly-plot [data]="trendPlottedDetailed?.graph2?.first?.data"
                         [layout]="trendPlottedDetailed?.graph2?.first?.layout">
                     </plotly-plot>
@@ -155,12 +155,12 @@
             </div>
 
             <div class="d-flex flex-md-row gap-2">
-                <div>
+                <div style="overflow:hidden">
                     <plotly-plot [data]="trendPlottedDetailed?.graph1?.second?.data"
                         [layout]="trendPlottedDetailed?.graph1?.second?.layout">
                     </plotly-plot>
                 </div>
-                <div>
+                <div style="overflow:hidden">
                     <plotly-plot [data]="trendPlottedDetailed?.graph2?.second?.data"
                         [layout]="trendPlottedDetailed?.graph2?.second?.layout">
                     </plotly-plot>
