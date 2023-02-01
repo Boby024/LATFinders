@@ -289,32 +289,6 @@ def plot_course_with_ratings_detailed(data, compare_mode):
         graphJSON = plotly.io.to_json(fig, pretty=True)
         return graphJSON
 
-#TODO: delete or edit
-
-
-def plot_uni_number_of_ratings_by_all_course_types(uni_id, course_id, dataFrame, compare_mode):
-    if df.size != 0:
-        # Pie Chart
-        if chart_type == 1:
-            fig = px.pie(values=dataFrame['overall_rating'],
-                         names=dataFrame['course_name'],
-                         title=degree_type+" courses at "+get_uni_name(uni_id),
-                         hole=.4)
-
-        # Bar Chart
-        elif chart_type == 2:
-            fig = px.bar(dataFrame, x="course_name", y="overall_rating",
-                         color="course_name",
-                         labels={
-                             "course_name": "Courses",
-                             "overall_rating": "Overall Ratings",
-                         },
-                         title=degree_type+" courses at "+get_uni_name(uni_id))
-
-        fig.show()
-    else:
-        print("Degree Type is not available :) ")
-
 
 def indexing1(data):
     df = pd.DataFrame([[ij for ij in i] for i in data])
