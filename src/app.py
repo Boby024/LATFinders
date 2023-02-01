@@ -59,7 +59,8 @@ def plot_number_of_ratings_by_uni_id():
     uni = model_service.get_uni_by_params(request.args)
     courses_with_count = model_service.get_courses_and_number_of_ratings_by_uni(
         request.args)
-    return response.setRep(plot_service.plot_number_of_ratings_by_uni_id(courses_with_count, uni['name']), "f")
+    compare_mode = request.args.get('compare_mode', "2")
+    return response.setRep(plot_service.plot_number_of_ratings_by_uni_id(courses_with_count, uni['name'], compare_mode), "f")
 
 
 @app.route("/course/plot_course_ratings_with_compare_mode")

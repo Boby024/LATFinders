@@ -12,6 +12,7 @@ export class UniNumberOfRatingsComponent implements OnInit {
   is_uni_selected = false;
   unis: Uni[] = [];
   public uniCoursesPlot?: Plotly.PlotlyDataLayoutConfig;
+  isBarChart = true;
 
   constructor(
     private mainService: MainService
@@ -31,18 +32,30 @@ export class UniNumberOfRatingsComponent implements OnInit {
   setUni(uniElement: any) {
     const value = uniElement.value;
     const uniID = value.id;
+    this.uni = value;
     this.is_uni_selected = true;
 
-    this.getNumberOfRatingsOfUniPlotted(uniID);
+    this.getNumberOfRatingsOfUniPlotted(uniID,2);
   }
 
   setLayoutConfig() {
     //this.uniCoursesPlot!.layout!.width = 600;
   }
-  getNumberOfRatingsOfUniPlotted(uniID:number) {
-    this.mainService.getNumberOfRatingsPlotted(uniID).subscribe((data) => {
+  getNumberOfRatingsOfUniPlotted(uniID:number,compare_mode:number) {
+    this.mainService.getNumberOfRatingsPlotted(uniID,compare_mode).subscribe((data) => {
       this.uniCoursesPlot = data;
     });
   }
-
+  toBarChart() {
+    if (this.uni) {
+      this.getNumberOfRatingsOfUniPlotted(this.uni?.id, 1)
+      this.isBarChart = true;
+    }
+  }
+  toPieChart() {
+    if (this.uni) {
+      this.getNumberOfRatingsOfUniPlotted(this.uni?.id, 1)
+      this.isBarChart = false;
+    }
+  }
 }

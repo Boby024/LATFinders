@@ -17,6 +17,7 @@
     </div>
 
     <div style="text-align: center;">
-        <button mat-raised-button color="primary">Get a more detailed analysis</button>
+        <button *ngIf="!isBarChart" mat-raised-button color="primary" (click)="toBarChart()">Bar Chart</button>
+        <button *ngIf="isBarChart" mat-raised-button color="primary" (click)="toPieChart()">Pie Chart</button>
     </div>
 </div>

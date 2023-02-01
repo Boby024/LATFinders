@@ -23,11 +23,10 @@ def plot_ratings(data):
     return graphJSON  # response.setRep(graphJSON, "f")
 
 
-def plot_number_of_ratings_by_uni_id(data, uni_name):
+def plot_number_of_ratings_by_uni_id(data, uni_name, compare_mode):
     df = pd.DataFrame(data)
     # Create subplots
-    fig = make_subplots(rows=2, cols=3, specs=[[{"type": "pie"}, {"type": "pie"}, {"type": "pie"}], [
-                        {"type": "pie"}, {"type": "pie"}, {"type": "pie"}]], start_cell="top-left")
+    fig = {}
 
     df_BoA = df[df['degree_type'] == 'Bachelor of Arts']
     df_BoE = df[df['degree_type'] == 'Bachelor of Engineering']
@@ -36,36 +35,53 @@ def plot_number_of_ratings_by_uni_id(data, uni_name):
     df_MoE = df[df['degree_type'] == 'Master of Engineering']
     df_MoS = df[df['degree_type'] == 'Master of Science']
 
-    chart_type = 1
     if df.size != 0:
         # Pie Chart
-        if chart_type == 1:
+        fig = make_subplots(rows=3, cols=2, specs=[[{"type": "pie"}, {"type": "pie"}], [
+                            {"type": "pie"}, {"type": "pie"}], [{"type": "pie"}, {"type": "pie"}]], start_cell="top-left", subplot_titles=("Bachelor of Arts", "Bachelor of Engineering", "Bachelor of Science", "Master of Arts", "Master of Engineering", "Master of Science"))
+        if compare_mode == "1":
             fig.add_trace(
-                go.Pie(labels=df_BoA['course_name'], values=df_BoA['number_of_ratings']), row=1, col=1)
+                go.Pie(labels=df_BoA['course_name'], values=df_BoA['number_of_ratings'], name="Bachelor of Arts"), row=1, col=1)
 
             fig.add_trace(
-                go.Pie(labels=df_BoE['course_name'], values=df_BoE['number_of_ratings']), row=1, col=2)
+                go.Pie(labels=df_BoE['course_name'], values=df_BoE['number_of_ratings'], name="Bachelor of Engineering"), row=1, col=2)
 
             fig.add_trace(
-                go.Pie(labels=df_BoS['course_name'], values=df_BoS['number_of_ratings']), row=1, col=3)
+                go.Pie(labels=df_BoS['course_name'], values=df_BoS['number_of_ratings'], name="Bachelor of Science"), row=2, col=1)
 
             fig.add_trace(
-                go.Pie(labels=df_MoA['course_name'], values=df_MoA['number_of_ratings']), row=2, col=1)
+                go.Pie(labels=df_MoA['course_name'], values=df_MoA['number_of_ratings'], name="Master of Arts"), row=2, col=2)
 
             fig.add_trace(
-                go.Pie(labels=df_MoE['course_name'], values=df_MoE['number_of_ratings']), row=2, col=2)
+                go.Pie(labels=df_MoE['course_name'], values=df_MoE['number_of_ratings'], name="Master of Engineering"), row=3, col=1)
 
             fig.add_trace(
-                go.Pie(labels=df_MoS['course_name'], values=df_MoS['number_of_ratings']), row=2, col=3)
+                go.Pie(labels=df_MoS['course_name'], values=df_MoS['number_of_ratings'], name="Master of Science"), row=3, col=2)
+            fig.update_layout(
+                autosize=True,
+                width=1500,
+                height=2000)
         # Bar Chart
-        elif chart_type == 2:
-            fig = px.bar(df, x="course_name", y="overall_rating",
-                         color="course_name",
-                         labels={
-                             "course_name": "Courses",
-                             "overall_rating": "Overall Ratings",
-                         },
-                         title=degree_type+" courses at "+get_uni_name(uni_id))
+        elif compare_mode == "2":
+            fig = make_subplots(rows=6, cols=1, specs=[[{"type": "bar"}], [{"type": "bar"}], [{"type": "bar"}], [
+                                {"type": "bar"}], [{"type": "bar"}], [{"type": "bar"}]], start_cell="top-left", subplot_titles=("Bachelor of Arts", "Bachelor of Engineering", "Bachelor of Science", "Master of Arts", "Master of Engineering", "Master of Science"))
+            fig.add_trace(
+                go.Bar(x=df_BoA['course_name'], y=df_BoA['number_of_ratings'], name="abc"), row=1, col=1)
+            fig.add_trace(
+                go.Bar(x=df_BoE['course_name'], y=df_BoE['number_of_ratings']), row=2, col=1)
+            fig.add_trace(
+                go.Bar(x=df_BoS['course_name'], y=df_BoS['number_of_ratings']), row=3, col=1)
+            fig.add_trace(
+                go.Bar(x=df_MoA['course_name'], y=df_MoA['number_of_ratings']), row=4, col=1)
+            fig.add_trace(
+                go.Bar(x=df_MoE['course_name'], y=df_MoE['number_of_ratings']), row=5, col=1)
+            fig.add_trace(
+                go.Bar(x=df_MoS['course_name'], y=df_MoS['number_of_ratings']), row=6, col=1)
+            fig.update_layout(
+                autosize=True,
+                width=1300,
+                height=3000)
+
         graphJSON = plotly.io.to_json(fig, pretty=True)
 
         return graphJSON
