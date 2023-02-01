@@ -1,0 +1,34 @@
+<mat-card>
+    <mat-card-content>
+        <mat-card-title>Contact Us Form</mat-card-title>
+        <!-- ============================================================== -->
+        <!-- column -->
+        <!-- ============================================================== -->
+        <form class="basic-form">
+            <div fxLayout="row wrap">
+                <!-- column -->
+                <div fxFlex.gt-sm="100" fxFlex="100">
+                    <mat-form-field>
+                        <input matInput placeholder="Your Name">
+                    </mat-form-field>
+                </div>
+                <!-- column -->
+                <div fxFlex.gt-sm="100" fxFlex="100">
+                    <mat-form-field>
+                        <input matInput placeholder="Your Email" type="email">
+                    </mat-form-field>
+                </div>
+                <!-- column -->
+                <div fxFlex.gt-sm="100" fxFlex="100">
+                    <mat-form-field>
+                        <textarea matInput placeholder="Your Message"></textarea>
+                    </mat-form-field>
+                </div>
+                <!-- column -->
+                <div fxFlex.gt-sm="100" fxFlex="100">
+                    <button mat-raised-button color="primary">Send the message</button>
+                </div>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

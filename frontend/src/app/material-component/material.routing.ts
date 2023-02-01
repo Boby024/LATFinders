@@ -4,6 +4,8 @@ import { CoursesPageComponent } from './ara-module/courses-page/courses-page.com
 import { UniversityComponent } from './ara-module/university/university.component';
 import { CoursePredictionComponent } from './ara-module/course-prediction/course-prediction.component';
 import { CompareCourseTrendComponent } from './ara-module/compare-course-trend/compare-course-trend.component';
+import { AboutUsComponent } from './ara-module/about-us/about-us.component';
+import { ContactUsComponent } from './ara-module/contact-us/contact-us.component';
 
 export const MaterialRoutes: Routes = [
   //ARA
@@ -26,5 +28,13 @@ export const MaterialRoutes: Routes = [
   {
     path: 'compare',
     component: CompareCourseTrendComponent
+  },
+  {
+    path: 'about-us',
+    component: AboutUsComponent
+  },
+  {
+    path: 'contact-us',
+    component: ContactUsComponent
   }
 ];

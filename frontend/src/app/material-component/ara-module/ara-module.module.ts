@@ -28,6 +28,8 @@ import { CompareCourseTrendComponent } from './compare-course-trend/compare-cour
 import { CoursePredictionComponent } from './course-prediction/course-prediction.component';
 import {MatRadioModule} from "@angular/material/radio";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 PlotlyModule.plotlyjs = PlotlyJS;
 
@@ -43,7 +45,9 @@ PlotlyModule.plotlyjs = PlotlyJS;
     CoursesWithCompareModeComponent,
     CoursesDetailedComponent,
     CompareCourseTrendComponent,
-    CoursePredictionComponent
+    CoursePredictionComponent,
+    AboutUsComponent,
+    ContactUsComponent
   ],
   imports: [
     CommonModule,
