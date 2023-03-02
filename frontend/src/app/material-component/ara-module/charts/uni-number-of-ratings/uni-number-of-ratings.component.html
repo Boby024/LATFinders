@@ -1,0 +1,23 @@
+<div class="d-flex flex-md-row gap-5 container">
+    <div>
+        <mat-form-field appearance="outline">
+            <mat-label>Select a Uni</mat-label>
+            <mat-select [(value)]="uni" (selectionChange)="setUni($event)">
+                <mat-option *ngFor="let uni of unis" [value]="uni">
+                    {{uni.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+
+<div>
+    <div style="overflow:hidden">
+        <plotly-plot *ngIf="uniCoursesPlot" [data]="uniCoursesPlot.data" [layout]="uniCoursesPlot.layout"></plotly-plot>
+    </div>
+
+    <div style="text-align: center;">
+        <button *ngIf="!isBarChart" mat-raised-button color="primary" (click)="toBarChart()">Bar Chart</button>
+        <button *ngIf="isBarChart" mat-raised-button color="primary" (click)="toPieChart()">Pie Chart</button>
+    </div>
+</div>

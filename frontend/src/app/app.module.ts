@@ -1,37 +1,46 @@
-import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { AppRoutes } from './app.routing';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import {RouterModule, RouterOutlet, Routes} from "@angular/router";
-import {HttpClientModule} from "@angular/common/http";
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FullComponent } from './layouts/full/full.component';
+import { AppHeaderComponent } from './layouts/full/header/header.component';
+import { AppSidebarComponent } from './layouts/full/sidebar/sidebar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {PlotlyModule} from "angular-plotly.js";
-import * as PlotlyJS from 'plotly.js-dist-min';
+import { DemoMaterialModule } from './demo-material-module';
 
-PlotlyModule.plotlyjs = PlotlyJS;
-const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'login', component: LoginComponent },
-];
+import { SharedModule } from './shared/shared.module';
+import { SpinnerComponent } from './shared/spinner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    LoginComponent
+    FullComponent,
+    AppHeaderComponent,
+    SpinnerComponent,
+    AppSidebarComponent
   ],
   imports: [
     BrowserModule,
-    RouterOutlet,
-    RouterModule.forRoot(routes),
-    HttpClientModule,
     BrowserAnimationsModule,
-    PlotlyModule,
+    DemoMaterialModule,
+    FormsModule,
+    FlexLayoutModule,
+    HttpClientModule,
+    SharedModule,
+    RouterModule.forRoot(AppRoutes, {enableTracing: true})
   ],
-  exports: [RouterModule],
-  providers: [],
+  providers: [
+    {
+      provide: LocationStrategy,
+      useClass: PathLocationStrategy
+    }
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

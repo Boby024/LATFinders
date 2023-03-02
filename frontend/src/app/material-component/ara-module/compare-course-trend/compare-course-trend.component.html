@@ -1,0 +1,171 @@
+<div fxLayout="row wrap">
+    <mat-card>
+        <mat-card-content>
+            <mat-card-title>Trend prediction</mat-card-title>
+            <mat-card-subtitle>Select two universities and the course to compare their trend</mat-card-subtitle>
+            <form [formGroup]="compareInfo" class="d-flex justify-content-center">
+                <div class="d-flex flex-md-row gap-5">
+                    <div>
+                        <div class="d-flex flex-md-row gap-5 mt-3">
+                            <div>
+                                <mat-form-field appearance="outline" style="width: 300px">
+                                    <mat-label>Select the first Uni</mat-label>
+                                    <mat-select formControlName="uni_id1">
+                                        <mat-option *ngFor="let uni of unis1" [value]="uni.id">
+                                            {{uni.name}}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div>
+                                <mat-form-field appearance="outline" style="width: 300px">
+                                    <mat-label>Select a Course from this Uni</mat-label>
+                                    <mat-select formControlName="course_id1">
+                                        <mat-option *ngFor="let course of courses1" [value]="course.id">
+                                            {{course.course_name}}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-md-row gap-5 mt-1">
+                            <div>
+                                <mat-form-field appearance="outline" style="width: 300px">
+                                    <mat-label>Select the second Uni</mat-label>
+                                    <mat-select formControlName="uni_id2">
+                                        <mat-option *ngFor="let uni of unis2" [value]="uni.id">
+                                            {{uni.name}}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div>
+                                <mat-form-field appearance="outline" style="width: 300px">
+                                    <mat-label>Select a Course from this Uni</mat-label>
+                                    <mat-select formControlName="course_id2">
+                                        <mat-option *ngFor="let course of courses2" [value]="course.id">
+                                            {{course.course_name}}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-md-column gap-1 mt-auto mb-auto" style="flex-direction: column;">
+                        <div class="mt-2">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Date(starting from) [YYYY-MM-DD]</mat-label>
+                                <input type="text" matInput formControlName="date">
+                            </mat-form-field>
+                        </div>
+                        <div class="mt-auto mb-auto">
+                            <button mat-raised-button color="primary" [disabled]="!compareInfo.valid"
+                                (click)="compareDefault()" style="padding: 10px 75px;">
+                                Compare
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<div class="d-flex justify-content-center mt-5" *ngIf="startSearching">
+    <mat-spinner></mat-spinner>
+</div>
+
+<div class="d-flex justify-content-center mt-5" style="color: red" *ngIf="showErrorMessage">
+    <div class="d-flex flex-md-column text-center">
+        <div>NOT ENOUGH RATING FROM ONE/TWO OF THE UNI(S) YOU SELECTED</div>
+        <div>PLEASE SELECT ANOTHER COURSE</div>
+    </div>
+</div>
+<div *ngIf="trendPlotted">
+    <mat-card>
+        <mat-card-content>
+            <mat-card-title>Compare two universities</mat-card-title>
+            <mat-card-subtitle>The difference between the ratings of two universities over time</mat-card-subtitle>
+            <div>
+                <plotly-plot [data]="trendPlotted?.graph1?.data" [layout]="trendPlotted?.graph1?.layout"></plotly-plot>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <mat-card>
+        <mat-card-content>
+            <mat-card-title>Comparing in detail</mat-card-title>
+            <mat-card-subtitle>Comparing the ratings in detail</mat-card-subtitle>
+            <div class="d-flex flex-md-column">
+                <plotly-plot [data]="trendPlotted?.graph2?.data" [layout]="trendPlotted?.graph2?.layout"></plotly-plot>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
+<div *ngIf="trendPlotted">
+    <mat-card>
+        <mat-card-content>
+            <mat-card-title>Compare mode based on of users</mat-card-title>
+            <mat-card-subtitle>Choose a compare mode to compare based on users</mat-card-subtitle>
+
+            <form [formGroup]="compareInfo" *ngIf="trendPlotted" class="mb-5">
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-md-row gap-5">
+                        <div class="d-flex flex-md-row gap-2 mt-auto mb-auto">
+                            <mat-label class="fw-bold">Comparing Mode: </mat-label>
+                            <mat-radio-group aria-label="compare-mode" class="d-flex flex-md-row gap-2"
+                                formControlName="mode">
+                                <mat-radio-button value="1">Age</mat-radio-button>
+                                <mat-radio-button value="2">Gender</mat-radio-button>
+                                <mat-radio-button value="3">Current Semester</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                        <div>
+                            <button style="margin-left:10px" mat-raised-button color="primary"
+                                (click)="compareWithMode()">
+                                Compare with mode
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<div *ngIf="trendPlottedDetailed">
+    <mat-card>
+        <mat-card-content>
+            <mat-card-title>Compare mode based on of users</mat-card-title>
+
+            <div class="d-flex flex-md-row gap-2">
+                <div style="overflow:hidden">
+                    <plotly-plot [data]="trendPlottedDetailed?.graph1?.first?.data"
+                        [layout]="trendPlottedDetailed?.graph1?.first?.layout">
+                    </plotly-plot>
+                </div>
+                <div style="overflow:hidden">
+                    <plotly-plot [data]="trendPlottedDetailed?.graph2?.first?.data"
+                        [layout]="trendPlottedDetailed?.graph2?.first?.layout">
+                    </plotly-plot>
+                </div>
+            </div>
+
+            <div class="d-flex flex-md-row gap-2">
+                <div style="overflow:hidden">
+                    <plotly-plot [data]="trendPlottedDetailed?.graph1?.second?.data"
+                        [layout]="trendPlottedDetailed?.graph1?.second?.layout">
+                    </plotly-plot>
+                </div>
+                <div style="overflow:hidden">
+                    <plotly-plot [data]="trendPlottedDetailed?.graph2?.second?.data"
+                        [layout]="trendPlottedDetailed?.graph2?.second?.layout">
+                    </plotly-plot>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

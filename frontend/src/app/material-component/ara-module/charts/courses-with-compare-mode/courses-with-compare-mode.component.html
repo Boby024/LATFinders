@@ -1,0 +1,70 @@
+<div fxLayout="row wrap">
+    <div fxFlex.gt-lg="30" fxFlex.gt-md="30" fxFlex.gt-xs="100" fxFlex="100">
+        <mat-card>
+            <mat-card-content>
+                <mat-card-title>Course selection</mat-card-title>
+                <mat-card-subtitle>Select the university and the course</mat-card-subtitle>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Select a Uni</mat-label>
+                        <mat-select [(value)]="uni" (selectionChange)="setUni($event)">
+                            <mat-option *ngFor="let uni of unis" [value]="uni">
+                                {{uni.name}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Select a Course from the Uni</mat-label>
+                        <mat-select [(value)]="course" [disabled]="!is_uni_selected"
+                            (selectionChange)="setCourse($event)">
+                            <mat-option *ngFor="let course of courses" [value]="course">
+                                {{course.course_name}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Select the compare mode</mat-label>
+                        <mat-select [(value)]="compareMode" [disabled]="!is_course_selected"
+                            (selectionChange)="setCompareMode($event)">
+                            <mat-option value=1>
+                                Age
+                            </mat-option>
+                            <mat-option [value]=2>
+                                Gender
+                            </mat-option>
+                            <mat-option [value]=3>
+                                Current Semester
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <!-- column -->
+    <!-- column -->
+    <div *ngIf="plot" fxFlex.gt-lg="70" fxFlex.gt-md="70" fxFlex.gt-xs="100" fxFlex="100">
+        <mat-card text-center>
+            <mat-card-content>
+                <mat-card-title>
+                    Ratings count
+                </mat-card-title>
+                <mat-card-subtitle>
+                    Ratings of course {{course.course_name}}
+                </mat-card-subtitle>
+                <div style="overflow:hidden">
+                    <plotly-plot [data]="plot.data" [layout]="plot.layout"></plotly-plot>
+                </div>
+
+                <mat-card-actions style="text-align:center">
+                    <button (click)="onShowMoreDetailPressed()" mat-raised-button color="primary">Get a more detailed
+                        analysis</button>
+                </mat-card-actions>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

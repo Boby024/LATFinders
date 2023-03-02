@@ -1,0 +1,4 @@
+<app-courses-with-compare-mode (showMoreDetail)="log($event)"></app-courses-with-compare-mode>
+
+<app-courses-detailed *ngIf="detailedCourse" [course]="detailedCourse"
+    [compareMode]="compareMode"></app-courses-detailed>
