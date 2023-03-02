@@ -42,7 +42,7 @@ To support student’s decision to choose a course based on other student's revi
 ***
 
 ## Visualization: (Screenshot)
-
+![title](imgs/1.png)
 
 ***
 
