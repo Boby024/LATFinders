@@ -1,5 +1,5 @@
 # LATFinders: ARA Project
-![ARA Logo](imgs/ARA Logo text.png)
+![ARA Logo](imgs/ARA Logo text.png) 
 
 
 ## Project Idea:
