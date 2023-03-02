@@ -44,13 +44,13 @@ To support student’s decision to choose a course based on other student's revi
 ***
 
 ## Visualization: (Screenshot)
-![title](imgs/1.png)
+![Home Page](imgs/1.png)
 
-![title](imgs/3.png)
+![Course Analysis](imgs/3.png)
 
-![title](imgs/5.png)
+![Compare Courses](imgs/5.png)
 
-![title](imgs/7.png)
+![Trend Prediction](imgs/7.png)
 
 ***
 
