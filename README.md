@@ -9,7 +9,7 @@ To support student’s decision to choose a course based on other student's revi
 * Predict the future trend of course overall ratings based on previous students’ ratings.
 
 
-Youtube video shows our project:  [Demo](https://youtu.be/zNUWVJ-DFaw)
+### Youtube video shows our project:  [ARA Demo](https://youtu.be/zNUWVJ-DFaw)
 ***
 
 ## Project Architecture:
