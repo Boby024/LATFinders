@@ -16,7 +16,7 @@ To support student’s decision to choose a course based on other student's revi
 
 ## Project Architecture:
 
-
+![Project Architecture](imgs/Project_arch.png) 
 
 
 ***
