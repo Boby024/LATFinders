@@ -43,13 +43,13 @@ To support student’s decision to choose a course based on other student's revi
 
 ## Visualization: (Screenshot)
 ![title](imgs/1.png)
-![title](imgs/2.png)
+
 ![title](imgs/3.png)
-![title](imgs/4.png)
+
 ![title](imgs/5.png)
-![title](imgs/6.png)
+
 ![title](imgs/7.png)
-![title](imgs/8.png)
+
 ***
 
 ## Installation
