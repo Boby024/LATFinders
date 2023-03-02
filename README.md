@@ -97,6 +97,8 @@ ng serve
 
 ***
 
+![Logo](imgs/Latfinders_logo.png) 
+
 ## LATFinders members:
    * Mahdyar Safarianbarmi
    * William Kana Tsoplefack
